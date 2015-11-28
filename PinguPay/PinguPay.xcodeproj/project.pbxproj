@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		422A13541C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422A13531C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		422A13561C09FEC10081FD09 /* 1p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13551C09FEC10081FD09 /* 1p.png */; settings = {ASSET_TAGS = (); }; };
+		422A13581C0A0D270081FD09 /* 2p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13571C0A0D270081FD09 /* 2p.png */; settings = {ASSET_TAGS = (); }; };
+		422A135A1C0A15D00081FD09 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13591C0A15D00081FD09 /* logo.png */; settings = {ASSET_TAGS = (); }; };
+		422A13601C0A1B100081FD09 /* UsernamePasswordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422A135F1C0A1B100081FD09 /* UsernamePasswordTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		422A13621C0A23E00081FD09 /* 3p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13611C0A23E00081FD09 /* 3p.png */; settings = {ASSET_TAGS = (); }; };
+		422A13641C0A24470081FD09 /* 4p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13631C0A24470081FD09 /* 4p.png */; settings = {ASSET_TAGS = (); }; };
+		422A13661C0A249E0081FD09 /* 5p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13651C0A249E0081FD09 /* 5p.png */; settings = {ASSET_TAGS = (); }; };
+		422A13681C0A24E80081FD09 /* 6p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13671C0A24E80081FD09 /* 6p.png */; settings = {ASSET_TAGS = (); }; };
 		42F472E71C09BEFE00A9E22C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F472E61C09BEFE00A9E22C /* main.m */; };
 		42F472EA1C09BEFE00A9E22C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F472E91C09BEFE00A9E22C /* AppDelegate.m */; };
 		42F472ED1C09BEFE00A9E22C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F472EC1C09BEFE00A9E22C /* ViewController.m */; };
@@ -16,6 +25,10 @@
 		42F472F81C09BEFE00A9E22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F472F61C09BEFE00A9E22C /* LaunchScreen.storyboard */; };
 		42F473031C09BEFE00A9E22C /* PinguPayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F473021C09BEFE00A9E22C /* PinguPayTests.m */; };
 		42F4730E1C09BEFE00A9E22C /* PinguPayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F4730D1C09BEFE00A9E22C /* PinguPayUITests.m */; };
+		42F4731E1C09F27700A9E22C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4731B1C09F27700A9E22C /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
+		42F4731F1C09F27700A9E22C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4731C1C09F27700A9E22C /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
+		42F473201C09F27700A9E22C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4731D1C09F27700A9E22C /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
+		42F473231C09F42500A9E22C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F473221C09F42500A9E22C /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +49,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		422A13521C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPaymentMethodCollectionViewController.h; sourceTree = "<group>"; };
+		422A13531C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPaymentMethodCollectionViewController.m; sourceTree = "<group>"; };
+		422A13551C09FEC10081FD09 /* 1p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1p.png; sourceTree = "<group>"; };
+		422A13571C0A0D270081FD09 /* 2p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2p.png; sourceTree = "<group>"; };
+		422A13591C0A15D00081FD09 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		422A135E1C0A1B100081FD09 /* UsernamePasswordTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UsernamePasswordTableViewController.h; path = ../UsernamePasswordTableViewController.h; sourceTree = "<group>"; };
+		422A135F1C0A1B100081FD09 /* UsernamePasswordTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UsernamePasswordTableViewController.m; path = ../UsernamePasswordTableViewController.m; sourceTree = "<group>"; };
+		422A13611C0A23E00081FD09 /* 3p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3p.png; sourceTree = "<group>"; };
+		422A13631C0A24470081FD09 /* 4p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4p.png; sourceTree = "<group>"; };
+		422A13651C0A249E0081FD09 /* 5p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5p.png; sourceTree = "<group>"; };
+		422A13671C0A24E80081FD09 /* 6p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6p.png; sourceTree = "<group>"; };
 		42F472E21C09BEFE00A9E22C /* PinguPay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinguPay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F472E61C09BEFE00A9E22C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42F472E81C09BEFE00A9E22C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +77,11 @@
 		42F473091C09BEFE00A9E22C /* PinguPayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinguPayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42F4730D1C09BEFE00A9E22C /* PinguPayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinguPayUITests.m; sourceTree = "<group>"; };
 		42F4730F1C09BEFE00A9E22C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42F4731B1C09F27700A9E22C /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		42F4731C1C09F27700A9E22C /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		42F4731D1C09F27700A9E22C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
+		42F473211C09F42500A9E22C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		42F473221C09F42500A9E22C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +89,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42F4731F1C09F27700A9E22C /* FBSDKLoginKit.framework in Frameworks */,
+				42F4731E1C09F27700A9E22C /* FBSDKCoreKit.framework in Frameworks */,
+				42F473201C09F27700A9E22C /* FBSDKShareKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,15 +135,15 @@
 		42F472E41C09BEFE00A9E22C /* PinguPay */ = {
 			isa = PBXGroup;
 			children = (
-				42F472E81C09BEFE00A9E22C /* AppDelegate.h */,
-				42F472E91C09BEFE00A9E22C /* AppDelegate.m */,
+				422A135E1C0A1B100081FD09 /* UsernamePasswordTableViewController.h */,
+				422A135F1C0A1B100081FD09 /* UsernamePasswordTableViewController.m */,
+				42F473211C09F42500A9E22C /* LoginViewController.h */,
+				42F473221C09F42500A9E22C /* LoginViewController.m */,
 				42F472EB1C09BEFE00A9E22C /* ViewController.h */,
 				42F472EC1C09BEFE00A9E22C /* ViewController.m */,
 				42F472EE1C09BEFE00A9E22C /* Main.storyboard */,
-				42F472F41C09BEFE00A9E22C /* Assets.xcassets */,
-				42F472F61C09BEFE00A9E22C /* LaunchScreen.storyboard */,
-				42F472F91C09BEFE00A9E22C /* Info.plist */,
-				42F472F11C09BEFE00A9E22C /* PinguPay.xcdatamodeld */,
+				422A13521C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.h */,
+				422A13531C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m */,
 				42F472E51C09BEFE00A9E22C /* Supporting Files */,
 			);
 			path = PinguPay;
@@ -120,6 +152,22 @@
 		42F472E51C09BEFE00A9E22C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				422A13591C0A15D00081FD09 /* logo.png */,
+				422A13671C0A24E80081FD09 /* 6p.png */,
+				422A13651C0A249E0081FD09 /* 5p.png */,
+				422A13631C0A24470081FD09 /* 4p.png */,
+				422A13611C0A23E00081FD09 /* 3p.png */,
+				422A13571C0A0D270081FD09 /* 2p.png */,
+				422A13551C09FEC10081FD09 /* 1p.png */,
+				42F472E81C09BEFE00A9E22C /* AppDelegate.h */,
+				42F472E91C09BEFE00A9E22C /* AppDelegate.m */,
+				42F472F41C09BEFE00A9E22C /* Assets.xcassets */,
+				42F472F61C09BEFE00A9E22C /* LaunchScreen.storyboard */,
+				42F472F91C09BEFE00A9E22C /* Info.plist */,
+				42F472F11C09BEFE00A9E22C /* PinguPay.xcdatamodeld */,
+				42F4731B1C09F27700A9E22C /* FBSDKCoreKit.framework */,
+				42F4731C1C09F27700A9E22C /* FBSDKLoginKit.framework */,
+				42F4731D1C09F27700A9E22C /* FBSDKShareKit.framework */,
 				42F472E61C09BEFE00A9E22C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -246,7 +294,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				422A13581C0A0D270081FD09 /* 2p.png in Resources */,
 				42F472F81C09BEFE00A9E22C /* LaunchScreen.storyboard in Resources */,
+				422A13661C0A249E0081FD09 /* 5p.png in Resources */,
+				422A135A1C0A15D00081FD09 /* logo.png in Resources */,
+				422A13621C0A23E00081FD09 /* 3p.png in Resources */,
+				422A13681C0A24E80081FD09 /* 6p.png in Resources */,
+				422A13561C09FEC10081FD09 /* 1p.png in Resources */,
+				422A13641C0A24470081FD09 /* 4p.png in Resources */,
 				42F472F51C09BEFE00A9E22C /* Assets.xcassets in Resources */,
 				42F472F01C09BEFE00A9E22C /* Main.storyboard in Resources */,
 			);
@@ -275,8 +330,11 @@
 			files = (
 				42F472ED1C09BEFE00A9E22C /* ViewController.m in Sources */,
 				42F472EA1C09BEFE00A9E22C /* AppDelegate.m in Sources */,
+				422A13601C0A1B100081FD09 /* UsernamePasswordTableViewController.m in Sources */,
 				42F472F31C09BEFE00A9E22C /* PinguPay.xcdatamodeld in Sources */,
 				42F472E71C09BEFE00A9E22C /* main.m in Sources */,
+				422A13541C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m in Sources */,
+				42F473231C09F42500A9E22C /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +473,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PinguPay",
+				);
 				INFOPLIST_FILE = PinguPay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguPay;
@@ -426,6 +489,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PinguPay",
+				);
 				INFOPLIST_FILE = PinguPay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguPay;
@@ -500,6 +568,7 @@
 				42F473141C09BEFE00A9E22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42F473151C09BEFE00A9E22C /* Build configuration list for PBXNativeTarget "PinguPayTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +577,7 @@
 				42F473171C09BEFE00A9E22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		42F473181C09BEFE00A9E22C /* Build configuration list for PBXNativeTarget "PinguPayUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +586,7 @@
 				42F4731A1C09BEFE00A9E22C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
