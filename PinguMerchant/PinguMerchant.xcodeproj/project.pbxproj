@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42AB6CE71C0AB57800DC5BFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6CE61C0AB57800DC5BFA /* main.m */; };
+		42AB6CEA1C0AB57800DC5BFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6CE91C0AB57800DC5BFA /* AppDelegate.m */; };
+		42AB6CF01C0AB57800DC5BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6CEE1C0AB57800DC5BFA /* Main.storyboard */; };
+		42AB6CF31C0AB57800DC5BFA /* PinguMerchant.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6CF11C0AB57800DC5BFA /* PinguMerchant.xcdatamodeld */; };
+		42AB6CF51C0AB57800DC5BFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6CF41C0AB57800DC5BFA /* Assets.xcassets */; };
+		42AB6CF81C0AB57800DC5BFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6CF61C0AB57800DC5BFA /* LaunchScreen.storyboard */; };
+		42AB6D031C0AB57800DC5BFA /* PinguMerchantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D021C0AB57800DC5BFA /* PinguMerchantTests.m */; };
+		42AB6D0E1C0AB57800DC5BFA /* PinguMerchantUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D0D1C0AB57800DC5BFA /* PinguMerchantUITests.m */; };
+		42AB6D1D1C0ABF9700DC5BFA /* CustomersCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D1C1C0ABF9700DC5BFA /* CustomersCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
+		42AB6D1F1C0AC18000DC5BFA /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6D1E1C0AC18000DC5BFA /* profile.jpg */; settings = {ASSET_TAGS = (); }; };
+		42AB6D221C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D211C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.m */; settings = {ASSET_TAGS = (); }; };
+		42AB6D251C0ACA3600DC5BFA /* ProcessingTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D241C0ACA3600DC5BFA /* ProcessingTransactionViewController.m */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42AB6CFF1C0AB57800DC5BFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42AB6CDA1C0AB57800DC5BFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42AB6CE11C0AB57800DC5BFA;
+			remoteInfo = PinguMerchant;
+		};
+		42AB6D0A1C0AB57800DC5BFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42AB6CDA1C0AB57800DC5BFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42AB6CE11C0AB57800DC5BFA;
+			remoteInfo = PinguMerchant;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42AB6CE21C0AB57800DC5BFA /* PinguMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinguMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AB6CE61C0AB57800DC5BFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42AB6CE81C0AB57800DC5BFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42AB6CE91C0AB57800DC5BFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42AB6CEF1C0AB57800DC5BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42AB6CF21C0AB57800DC5BFA /* PinguMerchant.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PinguMerchant.xcdatamodel; sourceTree = "<group>"; };
+		42AB6CF41C0AB57800DC5BFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		42AB6CF71C0AB57800DC5BFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		42AB6CF91C0AB57800DC5BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42AB6CFE1C0AB57800DC5BFA /* PinguMerchantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinguMerchantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AB6D021C0AB57800DC5BFA /* PinguMerchantTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinguMerchantTests.m; sourceTree = "<group>"; };
+		42AB6D041C0AB57800DC5BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42AB6D091C0AB57800DC5BFA /* PinguMerchantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PinguMerchantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42AB6D0D1C0AB57800DC5BFA /* PinguMerchantUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PinguMerchantUITests.m; sourceTree = "<group>"; };
+		42AB6D0F1C0AB57800DC5BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42AB6D1B1C0ABF9700DC5BFA /* CustomersCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomersCollectionViewController.h; sourceTree = "<group>"; };
+		42AB6D1C1C0ABF9700DC5BFA /* CustomersCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomersCollectionViewController.m; sourceTree = "<group>"; };
+		42AB6D1E1C0AC18000DC5BFA /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
+		42AB6D201C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseInvoiceTableViewController.h; sourceTree = "<group>"; };
+		42AB6D211C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseInvoiceTableViewController.m; sourceTree = "<group>"; };
+		42AB6D231C0ACA3600DC5BFA /* ProcessingTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingTransactionViewController.h; sourceTree = "<group>"; };
+		42AB6D241C0ACA3600DC5BFA /* ProcessingTransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingTransactionViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42AB6CDF1C0AB57800DC5BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AB6CFB1C0AB57800DC5BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AB6D061C0AB57800DC5BFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42AB6CD91C0AB57800DC5BFA = {
+			isa = PBXGroup;
+			children = (
+				42AB6CE41C0AB57800DC5BFA /* PinguMerchant */,
+				42AB6D011C0AB57800DC5BFA /* PinguMerchantTests */,
+				42AB6D0C1C0AB57800DC5BFA /* PinguMerchantUITests */,
+				42AB6CE31C0AB57800DC5BFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42AB6CE31C0AB57800DC5BFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42AB6CE21C0AB57800DC5BFA /* PinguMerchant.app */,
+				42AB6CFE1C0AB57800DC5BFA /* PinguMerchantTests.xctest */,
+				42AB6D091C0AB57800DC5BFA /* PinguMerchantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42AB6CE41C0AB57800DC5BFA /* PinguMerchant */ = {
+			isa = PBXGroup;
+			children = (
+				42AB6D1B1C0ABF9700DC5BFA /* CustomersCollectionViewController.h */,
+				42AB6D1C1C0ABF9700DC5BFA /* CustomersCollectionViewController.m */,
+				42AB6D1E1C0AC18000DC5BFA /* profile.jpg */,
+				42AB6CEE1C0AB57800DC5BFA /* Main.storyboard */,
+				42AB6D231C0ACA3600DC5BFA /* ProcessingTransactionViewController.h */,
+				42AB6D241C0ACA3600DC5BFA /* ProcessingTransactionViewController.m */,
+				42AB6D201C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.h */,
+				42AB6D211C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.m */,
+				42AB6CE51C0AB57800DC5BFA /* Supporting Files */,
+			);
+			path = PinguMerchant;
+			sourceTree = "<group>";
+		};
+		42AB6CE51C0AB57800DC5BFA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42AB6CE81C0AB57800DC5BFA /* AppDelegate.h */,
+				42AB6CE91C0AB57800DC5BFA /* AppDelegate.m */,
+				42AB6CF41C0AB57800DC5BFA /* Assets.xcassets */,
+				42AB6CF61C0AB57800DC5BFA /* LaunchScreen.storyboard */,
+				42AB6CF91C0AB57800DC5BFA /* Info.plist */,
+				42AB6CF11C0AB57800DC5BFA /* PinguMerchant.xcdatamodeld */,
+				42AB6CE61C0AB57800DC5BFA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42AB6D011C0AB57800DC5BFA /* PinguMerchantTests */ = {
+			isa = PBXGroup;
+			children = (
+				42AB6D021C0AB57800DC5BFA /* PinguMerchantTests.m */,
+				42AB6D041C0AB57800DC5BFA /* Info.plist */,
+			);
+			path = PinguMerchantTests;
+			sourceTree = "<group>";
+		};
+		42AB6D0C1C0AB57800DC5BFA /* PinguMerchantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				42AB6D0D1C0AB57800DC5BFA /* PinguMerchantUITests.m */,
+				42AB6D0F1C0AB57800DC5BFA /* Info.plist */,
+			);
+			path = PinguMerchantUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42AB6CE11C0AB57800DC5BFA /* PinguMerchant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42AB6D121C0AB57800DC5BFA /* Build configuration list for PBXNativeTarget "PinguMerchant" */;
+			buildPhases = (
+				42AB6CDE1C0AB57800DC5BFA /* Sources */,
+				42AB6CDF1C0AB57800DC5BFA /* Frameworks */,
+				42AB6CE01C0AB57800DC5BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PinguMerchant;
+			productName = PinguMerchant;
+			productReference = 42AB6CE21C0AB57800DC5BFA /* PinguMerchant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42AB6CFD1C0AB57800DC5BFA /* PinguMerchantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42AB6D151C0AB57800DC5BFA /* Build configuration list for PBXNativeTarget "PinguMerchantTests" */;
+			buildPhases = (
+				42AB6CFA1C0AB57800DC5BFA /* Sources */,
+				42AB6CFB1C0AB57800DC5BFA /* Frameworks */,
+				42AB6CFC1C0AB57800DC5BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42AB6D001C0AB57800DC5BFA /* PBXTargetDependency */,
+			);
+			name = PinguMerchantTests;
+			productName = PinguMerchantTests;
+			productReference = 42AB6CFE1C0AB57800DC5BFA /* PinguMerchantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		42AB6D081C0AB57800DC5BFA /* PinguMerchantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42AB6D181C0AB57800DC5BFA /* Build configuration list for PBXNativeTarget "PinguMerchantUITests" */;
+			buildPhases = (
+				42AB6D051C0AB57800DC5BFA /* Sources */,
+				42AB6D061C0AB57800DC5BFA /* Frameworks */,
+				42AB6D071C0AB57800DC5BFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42AB6D0B1C0AB57800DC5BFA /* PBXTargetDependency */,
+			);
+			name = PinguMerchantUITests;
+			productName = PinguMerchantUITests;
+			productReference = 42AB6D091C0AB57800DC5BFA /* PinguMerchantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42AB6CDA1C0AB57800DC5BFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "PinguPay Inc";
+				TargetAttributes = {
+					42AB6CE11C0AB57800DC5BFA = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					42AB6CFD1C0AB57800DC5BFA = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 42AB6CE11C0AB57800DC5BFA;
+					};
+					42AB6D081C0AB57800DC5BFA = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 42AB6CE11C0AB57800DC5BFA;
+					};
+				};
+			};
+			buildConfigurationList = 42AB6CDD1C0AB57800DC5BFA /* Build configuration list for PBXProject "PinguMerchant" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42AB6CD91C0AB57800DC5BFA;
+			productRefGroup = 42AB6CE31C0AB57800DC5BFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AB6CE11C0AB57800DC5BFA /* PinguMerchant */,
+				42AB6CFD1C0AB57800DC5BFA /* PinguMerchantTests */,
+				42AB6D081C0AB57800DC5BFA /* PinguMerchantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42AB6CE01C0AB57800DC5BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AB6CF81C0AB57800DC5BFA /* LaunchScreen.storyboard in Resources */,
+				42AB6CF51C0AB57800DC5BFA /* Assets.xcassets in Resources */,
+				42AB6CF01C0AB57800DC5BFA /* Main.storyboard in Resources */,
+				42AB6D1F1C0AC18000DC5BFA /* profile.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AB6CFC1C0AB57800DC5BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AB6D071C0AB57800DC5BFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42AB6CDE1C0AB57800DC5BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AB6CEA1C0AB57800DC5BFA /* AppDelegate.m in Sources */,
+				42AB6CE71C0AB57800DC5BFA /* main.m in Sources */,
+				42AB6D251C0ACA3600DC5BFA /* ProcessingTransactionViewController.m in Sources */,
+				42AB6D221C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.m in Sources */,
+				42AB6D1D1C0ABF9700DC5BFA /* CustomersCollectionViewController.m in Sources */,
+				42AB6CF31C0AB57800DC5BFA /* PinguMerchant.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AB6CFA1C0AB57800DC5BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AB6D031C0AB57800DC5BFA /* PinguMerchantTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42AB6D051C0AB57800DC5BFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42AB6D0E1C0AB57800DC5BFA /* PinguMerchantUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42AB6D001C0AB57800DC5BFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42AB6CE11C0AB57800DC5BFA /* PinguMerchant */;
+			targetProxy = 42AB6CFF1C0AB57800DC5BFA /* PBXContainerItemProxy */;
+		};
+		42AB6D0B1C0AB57800DC5BFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42AB6CE11C0AB57800DC5BFA /* PinguMerchant */;
+			targetProxy = 42AB6D0A1C0AB57800DC5BFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42AB6CEE1C0AB57800DC5BFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42AB6CEF1C0AB57800DC5BFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42AB6CF61C0AB57800DC5BFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42AB6CF71C0AB57800DC5BFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42AB6D101C0AB57800DC5BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		42AB6D111C0AB57800DC5BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42AB6D131C0AB57800DC5BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PinguMerchant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguMerchant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42AB6D141C0AB57800DC5BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PinguMerchant/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguMerchant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		42AB6D161C0AB57800DC5BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PinguMerchantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguMerchantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinguMerchant.app/PinguMerchant";
+			};
+			name = Debug;
+		};
+		42AB6D171C0AB57800DC5BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PinguMerchantTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguMerchantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PinguMerchant.app/PinguMerchant";
+			};
+			name = Release;
+		};
+		42AB6D191C0AB57800DC5BFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PinguMerchantUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguMerchantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PinguMerchant;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		42AB6D1A1C0AB57800DC5BFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PinguMerchantUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguMerchantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PinguMerchant;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42AB6CDD1C0AB57800DC5BFA /* Build configuration list for PBXProject "PinguMerchant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AB6D101C0AB57800DC5BFA /* Debug */,
+				42AB6D111C0AB57800DC5BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42AB6D121C0AB57800DC5BFA /* Build configuration list for PBXNativeTarget "PinguMerchant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AB6D131C0AB57800DC5BFA /* Debug */,
+				42AB6D141C0AB57800DC5BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42AB6D151C0AB57800DC5BFA /* Build configuration list for PBXNativeTarget "PinguMerchantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AB6D161C0AB57800DC5BFA /* Debug */,
+				42AB6D171C0AB57800DC5BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		42AB6D181C0AB57800DC5BFA /* Build configuration list for PBXNativeTarget "PinguMerchantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42AB6D191C0AB57800DC5BFA /* Debug */,
+				42AB6D1A1C0AB57800DC5BFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		42AB6CF11C0AB57800DC5BFA /* PinguMerchant.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				42AB6CF21C0AB57800DC5BFA /* PinguMerchant.xcdatamodel */,
+			);
+			currentVersion = 42AB6CF21C0AB57800DC5BFA /* PinguMerchant.xcdatamodel */;
+			path = PinguMerchant.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 42AB6CDA1C0AB57800DC5BFA /* Project object */;
+}
