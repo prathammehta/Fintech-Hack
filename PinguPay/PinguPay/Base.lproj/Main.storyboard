@@ -73,7 +73,7 @@
         <!--Payment Confirm View Controller-->
         <scene sceneID="PBg-9X-t0m">
             <objects>
-                <viewController id="5Q2-gf-eYN" customClass="PaymentConfirmViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="payVC" id="5Q2-gf-eYN" customClass="PaymentConfirmViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aEi-MN-esi"/>
                         <viewControllerLayoutGuide type="bottom" id="l8c-mn-j87"/>

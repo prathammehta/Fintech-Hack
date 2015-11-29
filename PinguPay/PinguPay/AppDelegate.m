@@ -89,6 +89,10 @@
         [params setObject:[parts objectAtIndex:1] forKey:[parts objectAtIndex:0]];
     }
     
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"payVC"];
+    [[self.window rootViewController] presentViewController:vc animated:YES completion:nil];
+    
     NSLog(@"Dict: %@",params);
     
     return YES;
