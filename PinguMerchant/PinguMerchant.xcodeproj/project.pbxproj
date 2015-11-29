@@ -16,9 +16,10 @@
 		42AB6D031C0AB57800DC5BFA /* PinguMerchantTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D021C0AB57800DC5BFA /* PinguMerchantTests.m */; };
 		42AB6D0E1C0AB57800DC5BFA /* PinguMerchantUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D0D1C0AB57800DC5BFA /* PinguMerchantUITests.m */; };
 		42AB6D1D1C0ABF9700DC5BFA /* CustomersCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D1C1C0ABF9700DC5BFA /* CustomersCollectionViewController.m */; };
-		42AB6D1F1C0AC18000DC5BFA /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6D1E1C0AC18000DC5BFA /* profile.jpg */; };
+		42AB6D1F1C0AC18000DC5BFA /* pra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6D1E1C0AC18000DC5BFA /* pra.jpg */; };
 		42AB6D221C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D211C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.m */; };
 		42AB6D251C0ACA3600DC5BFA /* ProcessingTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D241C0ACA3600DC5BFA /* ProcessingTransactionViewController.m */; };
+		42AB6D2A1C0AF78D00DC5BFA /* sid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6D291C0AF78D00DC5BFA /* sid.jpg */; settings = {ASSET_TAGS = (); }; };
 		D0C31AD6F48B29C2038CC843 /* libPods-PinguMerchant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B945ED9923C1F42B77DEE7 /* libPods-PinguMerchant.a */; };
 /* End PBXBuildFile section */
 
@@ -58,11 +59,12 @@
 		42AB6D0F1C0AB57800DC5BFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42AB6D1B1C0ABF9700DC5BFA /* CustomersCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomersCollectionViewController.h; sourceTree = "<group>"; };
 		42AB6D1C1C0ABF9700DC5BFA /* CustomersCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomersCollectionViewController.m; sourceTree = "<group>"; };
-		42AB6D1E1C0AC18000DC5BFA /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
+		42AB6D1E1C0AC18000DC5BFA /* pra.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pra.jpg; sourceTree = "<group>"; };
 		42AB6D201C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseInvoiceTableViewController.h; sourceTree = "<group>"; };
 		42AB6D211C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseInvoiceTableViewController.m; sourceTree = "<group>"; };
 		42AB6D231C0ACA3600DC5BFA /* ProcessingTransactionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProcessingTransactionViewController.h; sourceTree = "<group>"; };
 		42AB6D241C0ACA3600DC5BFA /* ProcessingTransactionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProcessingTransactionViewController.m; sourceTree = "<group>"; };
+		42AB6D291C0AF78D00DC5BFA /* sid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sid.jpg; sourceTree = "<group>"; };
 		71D34DCBE58C854BB836897F /* Pods-PinguMerchant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinguMerchant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinguMerchant/Pods-PinguMerchant.debug.xcconfig"; sourceTree = "<group>"; };
 		A4087AD69A5D678471AEF9C0 /* Pods-PinguMerchant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinguMerchant.release.xcconfig"; path = "Pods/Target Support Files/Pods-PinguMerchant/Pods-PinguMerchant.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,7 +122,8 @@
 			children = (
 				42AB6D1B1C0ABF9700DC5BFA /* CustomersCollectionViewController.h */,
 				42AB6D1C1C0ABF9700DC5BFA /* CustomersCollectionViewController.m */,
-				42AB6D1E1C0AC18000DC5BFA /* profile.jpg */,
+				42AB6D291C0AF78D00DC5BFA /* sid.jpg */,
+				42AB6D1E1C0AC18000DC5BFA /* pra.jpg */,
 				42AB6CEE1C0AB57800DC5BFA /* Main.storyboard */,
 				42AB6D231C0ACA3600DC5BFA /* ProcessingTransactionViewController.h */,
 				42AB6D241C0ACA3600DC5BFA /* ProcessingTransactionViewController.m */,
@@ -286,9 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				42AB6CF81C0AB57800DC5BFA /* LaunchScreen.storyboard in Resources */,
+				42AB6D2A1C0AF78D00DC5BFA /* sid.jpg in Resources */,
 				42AB6CF51C0AB57800DC5BFA /* Assets.xcassets in Resources */,
 				42AB6CF01C0AB57800DC5BFA /* Main.storyboard in Resources */,
-				42AB6D1F1C0AC18000DC5BFA /* profile.jpg in Resources */,
+				42AB6D1F1C0AC18000DC5BFA /* pra.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

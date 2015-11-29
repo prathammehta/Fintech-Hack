@@ -157,6 +157,33 @@ static NSString * const reuseIdentifier = @"customerCell";
                                              green:0.9
                                               blue:0.9
                                              alpha:1]];
+
+    UILabel *name = (UILabel *)[cell.contentView viewWithTag:2];
+    
+    if(indexPath.row == 0)
+    {
+        imageView.image = [UIImage imageNamed:@"pra.jpg"];
+        name.text = @"Pratham Mehta";
+    }
+    else
+    {
+        imageView.image = [UIImage imageNamed:@"sid.jpg"];
+        name.text = @"Siddharth Gupta";
+    }
+    CLBeacon *beacon = [self.detectedBeacons objectAtIndex:indexPath.row];
+    UILabel *label = (UILabel *)[cell.contentView viewWithTag:3];
+    if(beacon.proximity == CLProximityImmediate)
+    {
+        label.text = @"At the billing desk";
+    }
+    else if(beacon.proximity == CLProximityNear)
+    {
+        label.text = @"Close by";
+    }
+    else if(beacon.proximity == CLProximityFar)
+    {
+        label.text = @"Inside the store";
+    }
     
     return cell;
 }

@@ -34,7 +34,7 @@
     self.locationManager.delegate = self;
     [self.locationManager requestAlwaysAuthorization];
     
-<<<<<<< HEAD
+
     
     [FBSDKLoginButton class];
     BOOL r = [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
@@ -42,11 +42,7 @@
     if (![launchOptions objectForKey:UIApplicationLaunchOptionsURLKey]) {
 //        abort();
     }
-    
-    
-=======
->>>>>>> origin/master
-    return r;
+        return r;
 
 }
 
