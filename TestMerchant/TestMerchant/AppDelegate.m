@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  PinguPay
+//  TestMerchant
 //
-//  Created by Pratham Mehta on 28/11/15.
+//  Created by Pratham Mehta on 29/11/15.
 //  Copyright © 2015 PinguPay Inc. All rights reserved.
 //
 
@@ -16,30 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [FBSDKLoginButton class];
-    [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
-    
-    if (![launchOptions objectForKey:UIApplicationLaunchOptionsURLKey]) {
-//        abort();
-    }
-    
-    return YES;
-
-}
-
-- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
-{
-    NSString *query = [url.absoluteString componentsSeparatedByString:@"?"][1];
-    NSLog(@"Parameter string: %@",query);
-    NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
-    for (NSString *param in [query componentsSeparatedByString:@"&"]) {
-        NSArray *parts = [param componentsSeparatedByString:@"="];
-        if([parts count] < 2) continue;
-        [params setObject:[parts objectAtIndex:1] forKey:[parts objectAtIndex:0]];
-    }
-    
-    NSLog(@"Dict: %@",params);
-    
+    // Override point for customization after application launch.
     return YES;
 }
 
@@ -74,7 +51,7 @@
 @synthesize persistentStoreCoordinator = _persistentStoreCoordinator;
 
 - (NSURL *)applicationDocumentsDirectory {
-    // The directory the application uses to store the Core Data store file. This code uses a directory named "PinguPay.PinguPay" in the application's documents directory.
+    // The directory the application uses to store the Core Data store file. This code uses a directory named "PinguPay.TestMerchant" in the application's documents directory.
     return [[[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask] lastObject];
 }
 
@@ -83,7 +60,7 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"PinguPay" withExtension:@"momd"];
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"TestMerchant" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -97,7 +74,7 @@
     // Create the coordinator and store
     
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"PinguPay.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"TestMerchant.sqlite"];
     NSError *error = nil;
     NSString *failureReason = @"There was an error creating or loading the application's saved data.";
     if (![_persistentStoreCoordinator addPersistentStoreWithType:NSSQLiteStoreType configuration:nil URL:storeURL options:nil error:&error]) {
