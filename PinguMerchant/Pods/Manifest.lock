@@ -1,0 +1,19 @@
+PODS:
+  - CDZQRScanningViewController (1.0.7)
+  - M13OrderedDictionary (1.1.0)
+  - ObjectiveDDP (0.1.8):
+    - M13OrderedDictionary
+    - SocketRocket (= 0.3.1-beta2)
+  - SocketRocket (0.3.1-beta2)
+
+DEPENDENCIES:
+  - CDZQRScanningViewController
+  - ObjectiveDDP
+
+SPEC CHECKSUMS:
+  CDZQRScanningViewController: bec2f94f0378876e44a64db156d92f11d2825d95
+  M13OrderedDictionary: 6e157fe9c82aa6b3cd7198f5c5c30c7a6834c4a6
+  ObjectiveDDP: 87609d002487bdb2e81b460de707b684551c04de
+  SocketRocket: 7284ab9370a06c99aba92b2fe3a32aedd0f9a6fa
+
+COCOAPODS: 0.38.2

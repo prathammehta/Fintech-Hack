@@ -91,7 +91,7 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
     
     CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:self.beaconRegion.proximityUUID
                                                                      major:0
-                                                                     minor:1
+                                                                     minor:2
                                                                 identifier:self.beaconRegion.identifier];
     NSDictionary *beaconPeripheralData = [region peripheralDataWithMeasuredPower:nil];
     [self.peripheralManager startAdvertising:beaconPeripheralData];

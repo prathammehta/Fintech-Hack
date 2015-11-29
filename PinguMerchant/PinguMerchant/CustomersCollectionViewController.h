@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreLocation/CoreLocation.h>
+#import "MeteorClient.h"
+#import "ObjectiveDDP.h"
 
-@interface CustomersCollectionViewController : UICollectionViewController
+@interface CustomersCollectionViewController : UICollectionViewController <CLLocationManagerDelegate>
+
+@property MeteorClient *meteorClient;
+@property CLLocationManager *locationManager;
+@property (strong) ObjectiveDDP *ddp;
 
 @end

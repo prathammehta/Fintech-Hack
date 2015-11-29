@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>CDZQRScanningViewController.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>M13OrderedDictionary.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ObjectiveDDP.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-PinguMerchant.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SocketRocket.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>020E017F038C076F02DCB1A319E8C147</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6AF382003FC0D8D85E5A5E4C338A52B8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>77485F40E40A64C1A18CCA2A3E1DF027</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CBF1B01B4764888A493E4C546A094F0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D9B805D33535F267844E9FDA577729CA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
