@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BCDCEF4132D83688B72397E7"
+               BlueprintIdentifier = "9B7C1599618E28114CFC2BD3"
                BuildableName = "libPods-PinguPay.a"
                BlueprintName = "Pods-PinguPay"
                ReferencedContainer = "container:Pods.xcodeproj">

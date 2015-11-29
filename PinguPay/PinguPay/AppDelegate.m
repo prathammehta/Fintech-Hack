@@ -10,6 +10,7 @@
 
 @interface AppDelegate ()
 
+
 @end
 
 @implementation AppDelegate
@@ -17,14 +18,61 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [FBSDKLoginButton class];
-    [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    BOOL r = [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
     if (![launchOptions objectForKey:UIApplicationLaunchOptionsURLKey]) {
 //        abort();
     }
     
-    return YES;
+    self.meteorClient = [[MeteorClient alloc] initWithDDPVersion:@"pre2"];
+    //[self.meteorClient addSubscription:@"awesome_server_mongo_collection"];
+    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://localhost:3000/websocket" delegate:self.meteorClient];
+    self.meteorClient.ddp = ddp;
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnection) name:MeteorClientDidConnectNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnectionReady) name:MeteorClientConnectionReadyNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportDisconnection) name:MeteorClientDidDisconnectNotification object:nil];
+    
+    
+    [self.meteorClient.ddp connectWebSocket];
+    
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    [self.locationManager requestAlwaysAuthorization];
+    return r;
 
+}
+
+-(void)locationManager:(CLLocationManager *)manager didDetermineState:(CLRegionState)state forRegion:(CLRegion *)region{
+    
+    UILocalNotification *notification = [[UILocalNotification alloc] init];
+    
+    if(state == CLRegionStateInside)
+    {
+        notification.alertBody = [NSString stringWithFormat:@"You are inside region %@", region.identifier];
+    }
+    else if(state == CLRegionStateOutside)
+    {
+        notification.alertBody = [NSString stringWithFormat:@"You are outside region %@", region.identifier];
+    }
+    else
+    {
+        return;
+    }
+    
+    [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
+}
+
+- (void)reportConnection {
+    NSLog(@"Connecting to Meteor Server");
+}
+
+- (void)reportConnectionReady {
+    NSLog(@"CONNECTED to Meteor Server!");
+}
+
+- (void)reportDisconnection {
+    NSLog(@"Disconnected to Meteor Server");
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options

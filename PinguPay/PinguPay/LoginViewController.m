@@ -7,6 +7,8 @@
 //
 
 #import "LoginViewController.h"
+static NSString * const kUUID = @"A495FFFF-C5B1-4B44-B512-1370F02D74DE";
+
 
 @interface LoginViewController () <FBSDKLoginButtonDelegate>
 
@@ -40,6 +42,10 @@
 {
     NSLog(@"Facebook logged in!");
     [self performSegueWithIdentifier:@"loginDone" sender:self];
+    [FBSDKAccessToken setCurrentAccessToken:result.token];
+    
+    
+    
 }
 
 - (void)loginButtonDidLogOut:(FBSDKLoginButton *)loginButton

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1670E9DB1C0AC5E100D28D1A /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1670E9DA1C0AC5E100D28D1A /* HomeTableViewController.m */; };
+		1670E9DD1C0AC65B00D28D1A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1670E9DC1C0AC65B00D28D1A /* CoreBluetooth.framework */; };
 		1DFD0AC861FD74217313B26D /* libPods-PinguPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7978F8926583B8345C9C927 /* libPods-PinguPay.a */; };
 		422A13541C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422A13531C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m */; };
 		422A13561C09FEC10081FD09 /* 1p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13551C09FEC10081FD09 /* 1p.png */; };
@@ -54,6 +56,9 @@
 
 /* Begin PBXFileReference section */
 		0AA3A201F48B31F863E7A4E7 /* Pods-PinguPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinguPay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinguPay/Pods-PinguPay.debug.xcconfig"; sourceTree = "<group>"; };
+		1670E9D91C0AC5E100D28D1A /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		1670E9DA1C0AC5E100D28D1A /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		1670E9DC1C0AC65B00D28D1A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		422A13521C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPaymentMethodCollectionViewController.h; sourceTree = "<group>"; };
 		422A13531C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPaymentMethodCollectionViewController.m; sourceTree = "<group>"; };
 		422A13551C09FEC10081FD09 /* 1p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1p.png; sourceTree = "<group>"; };
@@ -101,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1670E9DD1C0AC65B00D28D1A /* CoreBluetooth.framework in Frameworks */,
 				42F4731F1C09F27700A9E22C /* FBSDKLoginKit.framework in Frameworks */,
 				42F4731E1C09F27700A9E22C /* FBSDKCoreKit.framework in Frameworks */,
 				42F473201C09F27700A9E22C /* FBSDKShareKit.framework in Frameworks */,
@@ -167,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				42F472EE1C09BEFE00A9E22C /* Main.storyboard */,
+				1670E9D91C0AC5E100D28D1A /* HomeTableViewController.h */,
+				1670E9DA1C0AC5E100D28D1A /* HomeTableViewController.m */,
 				42AB6CD61C0A9D6E00DC5BFA /* PaymentConfirmViewController.h */,
 				42AB6CD71C0A9D6E00DC5BFA /* PaymentConfirmViewController.m */,
 				42AB6CD01C0A995300DC5BFA /* RaiseInvoiceViewController.h */,
@@ -222,6 +230,7 @@
 		56B7F5D2BF1E80F68A20DF03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1670E9DC1C0AC65B00D28D1A /* CoreBluetooth.framework */,
 				F7978F8926583B8345C9C927 /* libPods-PinguPay.a */,
 			);
 			name = Frameworks;
@@ -415,6 +424,7 @@
 				422A13601C0A1B100081FD09 /* UsernamePasswordTableViewController.m in Sources */,
 				42F472F31C09BEFE00A9E22C /* PinguPay.xcdatamodeld in Sources */,
 				42F472E71C09BEFE00A9E22C /* main.m in Sources */,
+				1670E9DB1C0AC5E100D28D1A /* HomeTableViewController.m in Sources */,
 				422A13541C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m in Sources */,
 				42F473231C09F42500A9E22C /* LoginViewController.m in Sources */,
 				42AB6CD21C0A995300DC5BFA /* RaiseInvoiceViewController.m in Sources */,
@@ -564,6 +574,24 @@
 				);
 				INFOPLIST_FILE = PinguPay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"CDZQRScanningViewController\"",
+					"-l\"M13OrderedDictionary\"",
+					"-l\"ObjectiveDDP\"",
+					"-l\"SocketRocket\"",
+					"-l\"icucore\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -581,6 +609,24 @@
 				);
 				INFOPLIST_FILE = PinguPay/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"CDZQRScanningViewController\"",
+					"-l\"M13OrderedDictionary\"",
+					"-l\"ObjectiveDDP\"",
+					"-l\"SocketRocket\"",
+					"-l\"icucore\"",
+					"-framework",
+					"\"AVFoundation\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"UIKit\"",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguPay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

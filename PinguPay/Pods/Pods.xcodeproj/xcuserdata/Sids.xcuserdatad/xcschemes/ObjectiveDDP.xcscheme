@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5898496EFF99529D9A1B7094"
+               BlueprintIdentifier = "A54AA650F571587DCC97A621"
                BuildableName = "libObjectiveDDP.a"
                BlueprintName = "ObjectiveDDP"
                ReferencedContainer = "container:Pods.xcodeproj">
