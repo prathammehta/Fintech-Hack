@@ -7,18 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		422A13541C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422A13531C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m */; settings = {ASSET_TAGS = (); }; };
-		422A13561C09FEC10081FD09 /* 1p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13551C09FEC10081FD09 /* 1p.png */; settings = {ASSET_TAGS = (); }; };
-		422A13581C0A0D270081FD09 /* 2p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13571C0A0D270081FD09 /* 2p.png */; settings = {ASSET_TAGS = (); }; };
-		422A135A1C0A15D00081FD09 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13591C0A15D00081FD09 /* logo.png */; settings = {ASSET_TAGS = (); }; };
-		422A13601C0A1B100081FD09 /* UsernamePasswordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422A135F1C0A1B100081FD09 /* UsernamePasswordTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		422A13621C0A23E00081FD09 /* 3p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13611C0A23E00081FD09 /* 3p.png */; settings = {ASSET_TAGS = (); }; };
-		422A13641C0A24470081FD09 /* 4p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13631C0A24470081FD09 /* 4p.png */; settings = {ASSET_TAGS = (); }; };
-		422A13661C0A249E0081FD09 /* 5p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13651C0A249E0081FD09 /* 5p.png */; settings = {ASSET_TAGS = (); }; };
-		422A13681C0A24E80081FD09 /* 6p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13671C0A24E80081FD09 /* 6p.png */; settings = {ASSET_TAGS = (); }; };
-		42AB6CD21C0A995300DC5BFA /* RaiseInvoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6CD11C0A995300DC5BFA /* RaiseInvoiceViewController.m */; settings = {ASSET_TAGS = (); }; };
-		42AB6CD51C0A9C3800DC5BFA /* lines.png in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6CD41C0A9C3800DC5BFA /* lines.png */; settings = {ASSET_TAGS = (); }; };
-		42AB6CD81C0A9D6E00DC5BFA /* PaymentConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6CD71C0A9D6E00DC5BFA /* PaymentConfirmViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1DFD0AC861FD74217313B26D /* libPods-PinguPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7978F8926583B8345C9C927 /* libPods-PinguPay.a */; };
+		422A13541C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422A13531C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m */; };
+		422A13561C09FEC10081FD09 /* 1p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13551C09FEC10081FD09 /* 1p.png */; };
+		422A13581C0A0D270081FD09 /* 2p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13571C0A0D270081FD09 /* 2p.png */; };
+		422A135A1C0A15D00081FD09 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13591C0A15D00081FD09 /* logo.png */; };
+		422A13601C0A1B100081FD09 /* UsernamePasswordTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422A135F1C0A1B100081FD09 /* UsernamePasswordTableViewController.m */; };
+		422A13621C0A23E00081FD09 /* 3p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13611C0A23E00081FD09 /* 3p.png */; };
+		422A13641C0A24470081FD09 /* 4p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13631C0A24470081FD09 /* 4p.png */; };
+		422A13661C0A249E0081FD09 /* 5p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13651C0A249E0081FD09 /* 5p.png */; };
+		422A13681C0A24E80081FD09 /* 6p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13671C0A24E80081FD09 /* 6p.png */; };
+		42AB6CD21C0A995300DC5BFA /* RaiseInvoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6CD11C0A995300DC5BFA /* RaiseInvoiceViewController.m */; };
+		42AB6CD51C0A9C3800DC5BFA /* lines.png in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6CD41C0A9C3800DC5BFA /* lines.png */; };
+		42AB6CD81C0A9D6E00DC5BFA /* PaymentConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6CD71C0A9D6E00DC5BFA /* PaymentConfirmViewController.m */; };
 		42F472E71C09BEFE00A9E22C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F472E61C09BEFE00A9E22C /* main.m */; };
 		42F472EA1C09BEFE00A9E22C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F472E91C09BEFE00A9E22C /* AppDelegate.m */; };
 		42F472ED1C09BEFE00A9E22C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F472EC1C09BEFE00A9E22C /* ViewController.m */; };
@@ -28,10 +29,10 @@
 		42F472F81C09BEFE00A9E22C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F472F61C09BEFE00A9E22C /* LaunchScreen.storyboard */; };
 		42F473031C09BEFE00A9E22C /* PinguPayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F473021C09BEFE00A9E22C /* PinguPayTests.m */; };
 		42F4730E1C09BEFE00A9E22C /* PinguPayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F4730D1C09BEFE00A9E22C /* PinguPayUITests.m */; };
-		42F4731E1C09F27700A9E22C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4731B1C09F27700A9E22C /* FBSDKCoreKit.framework */; settings = {ASSET_TAGS = (); }; };
-		42F4731F1C09F27700A9E22C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4731C1C09F27700A9E22C /* FBSDKLoginKit.framework */; settings = {ASSET_TAGS = (); }; };
-		42F473201C09F27700A9E22C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4731D1C09F27700A9E22C /* FBSDKShareKit.framework */; settings = {ASSET_TAGS = (); }; };
-		42F473231C09F42500A9E22C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F473221C09F42500A9E22C /* LoginViewController.m */; settings = {ASSET_TAGS = (); }; };
+		42F4731E1C09F27700A9E22C /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4731B1C09F27700A9E22C /* FBSDKCoreKit.framework */; };
+		42F4731F1C09F27700A9E22C /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4731C1C09F27700A9E22C /* FBSDKLoginKit.framework */; };
+		42F473201C09F27700A9E22C /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4731D1C09F27700A9E22C /* FBSDKShareKit.framework */; };
+		42F473231C09F42500A9E22C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F473221C09F42500A9E22C /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AA3A201F48B31F863E7A4E7 /* Pods-PinguPay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinguPay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PinguPay/Pods-PinguPay.debug.xcconfig"; sourceTree = "<group>"; };
 		422A13521C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPaymentMethodCollectionViewController.h; sourceTree = "<group>"; };
 		422A13531C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPaymentMethodCollectionViewController.m; sourceTree = "<group>"; };
 		422A13551C09FEC10081FD09 /* 1p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1p.png; sourceTree = "<group>"; };
@@ -90,6 +92,8 @@
 		42F4731D1C09F27700A9E22C /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		42F473211C09F42500A9E22C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		42F473221C09F42500A9E22C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		D3CDFC626DD9DF8F65C392D9 /* Pods-PinguPay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PinguPay.release.xcconfig"; path = "Pods/Target Support Files/Pods-PinguPay/Pods-PinguPay.release.xcconfig"; sourceTree = "<group>"; };
+		F7978F8926583B8345C9C927 /* libPods-PinguPay.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PinguPay.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 				42F4731F1C09F27700A9E22C /* FBSDKLoginKit.framework in Frameworks */,
 				42F4731E1C09F27700A9E22C /* FBSDKCoreKit.framework in Frameworks */,
 				42F473201C09F27700A9E22C /* FBSDKShareKit.framework in Frameworks */,
+				1DFD0AC861FD74217313B26D /* libPods-PinguPay.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +148,8 @@
 				42F473011C09BEFE00A9E22C /* PinguPayTests */,
 				42F4730C1C09BEFE00A9E22C /* PinguPayUITests */,
 				42F472E31C09BEFE00A9E22C /* Products */,
+				614CCD1BFB9AF203BD02D01F /* Pods */,
+				56B7F5D2BF1E80F68A20DF03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -212,6 +219,23 @@
 			path = PinguPayUITests;
 			sourceTree = "<group>";
 		};
+		56B7F5D2BF1E80F68A20DF03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7978F8926583B8345C9C927 /* libPods-PinguPay.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		614CCD1BFB9AF203BD02D01F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0AA3A201F48B31F863E7A4E7 /* Pods-PinguPay.debug.xcconfig */,
+				D3CDFC626DD9DF8F65C392D9 /* Pods-PinguPay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -219,9 +243,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42F473121C09BEFE00A9E22C /* Build configuration list for PBXNativeTarget "PinguPay" */;
 			buildPhases = (
+				8953FC4CD5BFCB51A851EE56 /* Check Pods Manifest.lock */,
 				42F472DE1C09BEFE00A9E22C /* Sources */,
 				42F472DF1C09BEFE00A9E22C /* Frameworks */,
 				42F472E01C09BEFE00A9E22C /* Resources */,
+				BB14156208A7EFA078BE35BA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -344,6 +370,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8953FC4CD5BFCB51A851EE56 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BB14156208A7EFA078BE35BA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinguPay/Pods-PinguPay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42F472DE1C09BEFE00A9E22C /* Sources */ = {
@@ -495,6 +554,7 @@
 		};
 		42F473131C09BEFE00A9E22C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AA3A201F48B31F863E7A4E7 /* Pods-PinguPay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;
@@ -511,6 +571,7 @@
 		};
 		42F473141C09BEFE00A9E22C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3CDFC626DD9DF8F65C392D9 /* Pods-PinguPay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ENABLE_BITCODE = NO;

@@ -1,0 +1,18 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'PinguPay' do
+
+pod 'ObjectiveDDP'
+pod 'CDZQRScanningViewController'
+
+end
+
+target 'PinguPayTests' do
+
+end
+
+target 'PinguPayUITests' do
+
+end
+
