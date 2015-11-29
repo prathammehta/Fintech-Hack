@@ -32,6 +32,8 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
     [super viewDidLoad];
     
     [self startAdvertisingBeacon];
+    
+
 }
 
 - (void)startAdvertisingBeacon
@@ -83,6 +85,7 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
 {
     if (self.peripheralManager.state != CBPeripheralManagerStatePoweredOn) {
         NSLog(@"Peripheral manager is off.");
+//        [self performSegueWithIdentifier:@"nobluetooth" sender:self];
         return;
     }
     
@@ -97,6 +100,8 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
     [self.peripheralManager startAdvertising:beaconPeripheralData];
     
     NSLog(@"Turning on advertising for region: %@.", region);
+    
+    [self performSegueWithIdentifier:@"bluetooth" sender:self];
 }
 
 - (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheralManager

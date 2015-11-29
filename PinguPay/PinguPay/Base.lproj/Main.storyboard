@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8J9-6z-w9g">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8Su-SY-v5z">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
@@ -8,33 +8,95 @@
         <scene sceneID="alZ-OF-anJ">
             <objects>
                 <tableViewController id="8J9-6z-w9g" customClass="HomeTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="FLs-P8-Gcj">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="FLs-P8-Gcj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AFw-bD-pjA">
-                                <rect key="frame" x="0.0" y="28" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AFw-bD-pjA" id="ntU-44-E5t">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <animations/>
-                                </tableViewCellContentView>
-                                <animations/>
-                            </tableViewCell>
-                        </prototypes>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <sections>
+                            <tableViewSection footerTitle="Please enter a store or scan a code to get started" id="GrH-7t-2r8">
+                                <cells/>
+                            </tableViewSection>
+                        </sections>
                         <connections>
                             <outlet property="dataSource" destination="8J9-6z-w9g" id="ITW-rs-rmM"/>
                             <outlet property="delegate" destination="8J9-6z-w9g" id="qrk-pR-Zyl"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="sbA-tz-iAB">
+                        <barButtonItem key="rightBarButtonItem" title="Scan a code" id="P8E-4l-X4E">
+                            <connections>
+                                <segue destination="zfS-fl-s5U" kind="show" id="mUQ-Bx-dFX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="Wj0-y8-gpf" kind="presentation" identifier="bluetooth" animates="NO" id="yX9-fz-KlA"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xh8-ua-5Px" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="850" y="-471"/>
+            <point key="canvasLocation" x="1662" y="-449"/>
+        </scene>
+        <!--Welcome To Starbucks-->
+        <scene sceneID="rX3-w5-BB6">
+            <objects>
+                <viewController id="Ubq-V8-TPi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZpI-DY-OI1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jd4-ET-bqJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bdO-Tl-Amp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="starbucks.png" translatesAutoresizingMaskIntoConstraints="NO" id="IbK-Gz-2Lx">
+                                <rect key="frame" x="18" y="84" width="285" height="85"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Ugf-Ah-iuv">
+                                <rect key="frame" x="40" y="385" width="240" height="149"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="68u-Bp-xH5">
+                                <rect key="frame" x="40" y="202" width="240" height="163"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Welcome To Starbucks" id="HMz-xL-aoD">
+                        <barButtonItem key="rightBarButtonItem" title="Scan a code" id="lr7-lB-cqm">
+                            <connections>
+                                <segue destination="zfS-fl-s5U" kind="show" id="KId-yY-gkU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mg7-wj-pjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2633" y="-505"/>
+        </scene>
+        <!--ScanA Code View Controller-->
+        <scene sceneID="kyY-hg-KsM">
+            <objects>
+                <viewController id="zfS-fl-s5U" customClass="ScanACodeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wns-AF-IZm"/>
+                        <viewControllerLayoutGuide type="bottom" id="ehS-Uh-3Nd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="w47-0N-BYK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="POr-T9-7iO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2174" y="272"/>
         </scene>
         <!--Raise Invoice View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -68,7 +130,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="868" y="392"/>
+            <point key="canvasLocation" x="916" y="764"/>
         </scene>
         <!--Payment Confirm View Controller-->
         <scene sceneID="PBg-9X-t0m">
@@ -195,7 +257,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6go-7M-ryY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1383" y="392"/>
+            <point key="canvasLocation" x="1431" y="764"/>
         </scene>
         <!--Welcome-->
         <scene sceneID="J6H-ve-1k4">
@@ -408,9 +470,54 @@
             </objects>
             <point key="canvasLocation" x="1717" y="-1814"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ayf-Va-Owy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Wj0-y8-gpf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H9O-Vm-Fem">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Ubq-V8-TPi" kind="relationship" relationship="rootViewController" id="WKn-2h-dPv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iu9-WT-acy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2101" y="-505"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="otP-Qn-bnG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8Su-SY-v5z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="yK3-gI-fp4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8J9-6z-w9g" kind="relationship" relationship="rootViewController" id="y53-oM-Rqy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qwa-6M-TgM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1058" y="-449"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="1.jpg" width="600" height="399"/>
+        <image name="2.jpg" width="450" height="299"/>
         <image name="lines.png" width="375" height="213"/>
         <image name="logo.png" width="393" height="128"/>
+        <image name="starbucks.png" width="1024" height="306"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="KId-yY-gkU"/>
+    </inferredMetricsTieBreakers>
 </document>
