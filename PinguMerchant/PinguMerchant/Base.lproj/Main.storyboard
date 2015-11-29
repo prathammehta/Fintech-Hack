@@ -200,7 +200,7 @@
         <!--Navigation Controller-->
         <scene sceneID="TyQ-RX-RoS">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="17d-Ng-4ut" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="17d-Ng-4ut" sceneMemberID="viewController">
                     <toolbarItems/>
                     <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Yq-FP-349">
@@ -209,6 +209,11 @@
                         <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="V5c-sl-8HM">
+                        <rect key="frame" x="0.0" y="576" width="540" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </toolbar>
                     <connections>
                         <segue destination="nGG-LV-tn7" kind="relationship" relationship="rootViewController" id="bdF-xO-izP"/>
                     </connections>
