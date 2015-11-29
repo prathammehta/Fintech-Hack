@@ -168,7 +168,7 @@
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="53"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At McDonanlds, 5th Avenue, NYC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ems-sd-VEw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At Starbucks, 5th Avenue, NYC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ems-sd-VEw">
                                 <rect key="frame" x="38" y="175" width="245" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -252,6 +252,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="amountLabel" destination="BPm-xd-6qJ" id="b8M-VE-hyR"/>
                         <outlet property="listOfMethodsTableView" destination="NGL-c6-bLm" id="mbh-AE-dUS"/>
                     </connections>
                 </viewController>
@@ -518,6 +519,6 @@
         <image name="starbucks.png" width="1024" height="306"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="KId-yY-gkU"/>
+        <segue reference="mUQ-Bx-dFX"/>
     </inferredMetricsTieBreakers>
 </document>

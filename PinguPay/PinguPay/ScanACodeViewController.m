@@ -8,6 +8,7 @@
 
 #import "ScanACodeViewController.h"
 #import "CDZQRScanningViewController.h"
+#import "PaymentConfirmViewController.h"
 
 
 @interface ScanACodeViewController ()
@@ -41,8 +42,21 @@
         
             [scanningNavVC dismissViewControllerAnimated:YES completion:^{
                 UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-                UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"payVC"];
-                [self presentViewController:vc animated:YES completion:nil];
+                
+                NSString *query = result;
+                NSLog(@"Parameter string: %@",query);
+                NSMutableDictionary *params = [[NSMutableDictionary alloc] init];
+                for (NSString *param in [query componentsSeparatedByString:@"&"]) {
+                    NSArray *parts = [param componentsSeparatedByString:@"="];
+                    if([parts count] < 2) continue;
+                    [params setObject:[parts objectAtIndex:1] forKey:[parts objectAtIndex:0]];
+                }
+
+                
+                PaymentConfirmViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"payVC"];
+                [self presentViewController:vc animated:YES completion:^{
+                    vc.amountLabel.text = [params objectForKey:@"amount"];
+                }];
             }];
         };
         scanningVC.cancelBlock = ^() {

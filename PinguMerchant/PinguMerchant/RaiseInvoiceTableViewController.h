@@ -10,4 +10,6 @@
 
 @interface RaiseInvoiceTableViewController : UITableViewController
 
+@property (nonatomic, strong) NSString *amount;
+
 @end

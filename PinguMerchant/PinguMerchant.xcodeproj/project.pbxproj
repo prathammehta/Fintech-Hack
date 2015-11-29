@@ -125,10 +125,10 @@
 				42AB6D291C0AF78D00DC5BFA /* sid.jpg */,
 				42AB6D1E1C0AC18000DC5BFA /* pra.jpg */,
 				42AB6CEE1C0AB57800DC5BFA /* Main.storyboard */,
-				42AB6D231C0ACA3600DC5BFA /* ProcessingTransactionViewController.h */,
-				42AB6D241C0ACA3600DC5BFA /* ProcessingTransactionViewController.m */,
 				42AB6D201C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.h */,
 				42AB6D211C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.m */,
+				42AB6D231C0ACA3600DC5BFA /* ProcessingTransactionViewController.h */,
+				42AB6D241C0ACA3600DC5BFA /* ProcessingTransactionViewController.m */,
 				42AB6CE51C0AB57800DC5BFA /* Supporting Files */,
 			);
 			path = PinguMerchant;

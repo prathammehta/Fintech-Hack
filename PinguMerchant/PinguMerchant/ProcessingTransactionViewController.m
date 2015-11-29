@@ -48,4 +48,9 @@
     return qrFilter.outputImage;
 }
 
+- (IBAction)donePressed:(id)sender
+{
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+}
+
 @end

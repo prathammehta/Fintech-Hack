@@ -10,4 +10,6 @@
 
 @interface PaymentConfirmViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *amountLabel;
+@property (nonatomic, strong) NSString *amount;
 @end

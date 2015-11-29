@@ -11,6 +11,7 @@
 
 @interface RaiseInvoiceTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *amountField;
 
 @end
 
@@ -19,7 +20,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     ProcessingTransactionViewController *vc = segue.destinationViewController;
-    vc.qrString = @"id=10D39AE7-020E-4467-9CB2-DD36366F899D&amount=350";
+    vc.qrString = [NSString stringWithFormat:@"=10D39AE7-020E-4467-9CB2-DD36366F899D&amount=%@",self.amountField.text];
 }
 
 @end
