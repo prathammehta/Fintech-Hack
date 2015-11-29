@@ -7,7 +7,9 @@
 //
 
 #import "LoginViewController.h"
-static NSString * const kUUID = @"A495FFFF-C5B1-4B44-B512-1370F02D74DE";
+#import "AppDelegate.h"
+
+static NSString * const kUUID = @"1";
 
 
 @interface LoginViewController () <FBSDKLoginButtonDelegate>
@@ -29,6 +31,9 @@ static NSString * const kUUID = @"A495FFFF-C5B1-4B44-B512-1370F02D74DE";
     self.loginButton = [[FBSDKLoginButton alloc] initWithFrame:CGRectZero];
     self.loginButton.loginBehavior = FBSDKLoginBehaviorSystemAccount;
     self.loginButton.delegate = self;
+    self.loginButton.readPermissions = @[@"public_profile",
+                                         @"email",
+                                         @"user_friends"];
     [self.view addSubview:self.loginButton];
     self.loginButton.center = self.view.center;
 }
@@ -41,8 +46,32 @@ static NSString * const kUUID = @"A495FFFF-C5B1-4B44-B512-1370F02D74DE";
 - (void)loginButton:(FBSDKLoginButton *)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult *)result error:(NSError *)error
 {
     NSLog(@"Facebook logged in!");
-    [self performSegueWithIdentifier:@"loginDone" sender:self];
+    
     [FBSDKAccessToken setCurrentAccessToken:result.token];
+    
+    if ([FBSDKAccessToken currentAccessToken]) {
+        [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:@{@"fields":@"name,email,picture"}] //@{@"fields":@"email"}]
+         startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+             if (!error) {
+                 NSLog(@"fetched user:%@", result);
+                 
+                 AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+                 
+                 [appDelegate.meteorClient callMethodName:@"registerCustomer"
+                                               parameters:@[[result objectForKey:@"name"],
+                                                            [[[result objectForKey:@"picture"] objectForKey:@"data"] objectForKey:@"url"],
+                                                            kUUID]
+                                         responseCallback:nil];
+                 
+             }
+             else
+             {
+                 NSLog(@"ERROR %@",error.localizedDescription);
+             }
+         }];
+    }
+    
+//    [self performSegueWithIdentifier:@"loginDone" sender:self];
     
     
     

@@ -17,16 +17,10 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [FBSDKLoginButton class];
-    BOOL r = [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
-    
-    if (![launchOptions objectForKey:UIApplicationLaunchOptionsURLKey]) {
-//        abort();
-    }
     
     self.meteorClient = [[MeteorClient alloc] initWithDDPVersion:@"pre2"];
     //[self.meteorClient addSubscription:@"awesome_server_mongo_collection"];
-    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://localhost:3000/websocket" delegate:self.meteorClient];
+    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://192.168.15.18:3000/websocket" delegate:self.meteorClient];
     self.meteorClient.ddp = ddp;
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnection) name:MeteorClientDidConnectNotification object:nil];
@@ -39,6 +33,16 @@
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     [self.locationManager requestAlwaysAuthorization];
+    
+    
+    [FBSDKLoginButton class];
+    BOOL r = [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
+    
+    if (![launchOptions objectForKey:UIApplicationLaunchOptionsURLKey]) {
+//        abort();
+    }
+    
+    
     return r;
 
 }
