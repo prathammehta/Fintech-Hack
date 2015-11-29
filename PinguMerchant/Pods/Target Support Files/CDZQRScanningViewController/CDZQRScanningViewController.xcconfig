@@ -1,0 +1,1 @@
+CDZQRSCANNINGVIEWCONTROLLER_OTHER_LDFLAGS = -framework "AVFoundation" -framework "UIKit"
