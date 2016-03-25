@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AEE9529CDE0157A31C5EC7084EFEB2FD26A5CC0A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2A36E8CA75548CF8947EB69D3AE99DA6FB031C64" : 0,
+    "AEE9529CDE0157A31C5EC7084EFEB2FD26A5CC0A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "25E5FB80-A5E9-44A1-A057-B27E68D15AB9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2A36E8CA75548CF8947EB69D3AE99DA6FB031C64" : "Fintech-Hack\/ObjectiveDDP\/",
+    "AEE9529CDE0157A31C5EC7084EFEB2FD26A5CC0A" : "Fintech-Hack\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PinguPay",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PinguPay\/PinguPay.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:boundsj\/ObjectiveDDP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2A36E8CA75548CF8947EB69D3AE99DA6FB031C64"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:prathammehta\/Fintech-Hack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AEE9529CDE0157A31C5EC7084EFEB2FD26A5CC0A"
+    }
+  ]
+}
