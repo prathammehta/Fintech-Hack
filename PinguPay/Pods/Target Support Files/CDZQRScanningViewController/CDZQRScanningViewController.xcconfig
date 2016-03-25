@@ -1,1 +1,5 @@
-CDZQRSCANNINGVIEWCONTROLLER_OTHER_LDFLAGS = -framework "AVFoundation" -framework "UIKit"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/CDZQRScanningViewController" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CDZQRScanningViewController" "${PODS_ROOT}/Headers/Public/M13OrderedDictionary" "${PODS_ROOT}/Headers/Public/ObjectiveDDP" "${PODS_ROOT}/Headers/Public/SocketRocket"
+OTHER_LDFLAGS = -framework "AVFoundation" -framework "UIKit"
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES
