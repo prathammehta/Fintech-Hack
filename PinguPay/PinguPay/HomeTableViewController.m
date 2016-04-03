@@ -10,6 +10,9 @@
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
+
+#define CUSTOMER_ID 2
+
 static NSString * const kUUID = @"A495FFFF-C5B1-4B44-B512-1370F02D74DE";
 static NSString * const kIdentifier = @"Customer";
 static void * const kRangingOperationContext = (void *)&kRangingOperationContext;
@@ -31,9 +34,64 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self startAdvertisingBeacon];
+    self.meteorClient = [[MeteorClient alloc] initWithDDPVersion:@"1"];
+    [self.meteorClient addSubscription:@"ordersForMe" withParameters:@[@CUSTOMER_ID]];
+    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://192.168.1.39:3000/websocket" delegate:self.meteorClient];
+    self.meteorClient.ddp = ddp;
     
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnection) name:MeteorClientDidConnectNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnectionReady) name:MeteorClientConnectionReadyNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportDisconnection) name:MeteorClientDidDisconnectNotification object:nil];
+    
+    [self.meteorClient.ddp connectWebSocket];
+    
+    [self startAdvertisingBeacon];
+}
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didReceiveAddedUpdate:)
+                                                 name:@"added"
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didReceiveRemovedUpdate:)
+                                                 name:@"removed"
+                                               object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(didReceiveChangeUpdate:)
+                                                 name:@"changed"
+                                               object:nil];
+}
+
+- (void) didReceiveAddedUpdate:(NSNotification *)update {
+    [self checkForOrders];
+}
+
+- (void) checkForOrders {
+    M13MutableOrderedDictionary *currentOrders = [self.meteorClient.collections objectForKey:@"OrdersCollection"];
+    int count = [currentOrders count];
+    
+    if(count){
+        NSDictionary *order = currentOrders[count - 1];
+        NSNumber *customer = [order objectForKey:@"customer"];
+        NSNumber *approved = [order objectForKey:@"approved"];
+        
+        if(customer.intValue == CUSTOMER_ID && approved.boolValue == NO){
+            //present a new view controller for this amount, and store id....
+            NSLog(@"entered here");
+        }
+    }
+    
+}
+
+- (void) didReceiveRemovedUpdate:(id)update {
+    [self checkForOrders];
+}
+
+- (void) didReceiveChangeUpdate:(id)update {
+    [self checkForOrders];
 }
 
 - (void)startAdvertisingBeacon
@@ -94,7 +152,7 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
     
     CLBeaconRegion *region = [[CLBeaconRegion alloc] initWithProximityUUID:self.beaconRegion.proximityUUID
                                                                      major:0
-                                                                     minor:2
+                                                                     minor:CUSTOMER_ID
                                                                 identifier:self.beaconRegion.identifier];
     NSDictionary *beaconPeripheralData = [region peripheralDataWithMeasuredPower:nil];
     [self.peripheralManager startAdvertising:beaconPeripheralData];
@@ -115,70 +173,29 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
     [self turnOnAdvertising];
 }
 
+- (void)reportConnection {
+    NSLog(@"Connecting to Meteor Server");
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
+}
+
+- (void)reportConnectionReady {
+    NSLog(@"CONNECTED to Meteor Server!");
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    self.collection = self.meteorClient.collections[@"OrdersCollection"];
+}
+
+- (void)reportDisconnection {
+    NSLog(@"------------------- DISCONNECTED to Meteor Server!");
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
     return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
     return 0;
 }
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

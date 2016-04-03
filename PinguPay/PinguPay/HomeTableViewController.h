@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MeteorClient.h"
+#import "ObjectiveDDP.h"
+#import "M13OrderedDictionary.h"
 
 @interface HomeTableViewController : UITableViewController
+
+
+@property MeteorClient *meteorClient;
+@property (strong) ObjectiveDDP *ddp;
+
+@property (strong, nonatomic) M13MutableOrderedDictionary *collection;
+
 
 @end

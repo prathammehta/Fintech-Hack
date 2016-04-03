@@ -19,7 +19,7 @@
 		42AB6D1F1C0AC18000DC5BFA /* pra.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6D1E1C0AC18000DC5BFA /* pra.jpg */; };
 		42AB6D221C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D211C0AC7BE00DC5BFA /* RaiseInvoiceTableViewController.m */; };
 		42AB6D251C0ACA3600DC5BFA /* ProcessingTransactionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6D241C0ACA3600DC5BFA /* ProcessingTransactionViewController.m */; };
-		42AB6D2A1C0AF78D00DC5BFA /* sid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6D291C0AF78D00DC5BFA /* sid.jpg */; settings = {ASSET_TAGS = (); }; };
+		42AB6D2A1C0AF78D00DC5BFA /* sid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6D291C0AF78D00DC5BFA /* sid.jpg */; };
 		D0C31AD6F48B29C2038CC843 /* libPods-PinguMerchant.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 15B945ED9923C1F42B77DEE7 /* libPods-PinguMerchant.a */; };
 /* End PBXBuildFile section */
 
@@ -195,6 +195,7 @@
 				42AB6CDF1C0AB57800DC5BFA /* Frameworks */,
 				42AB6CE01C0AB57800DC5BFA /* Resources */,
 				06F7B9A749895C6BDF76D419 /* Copy Pods Resources */,
+				76FED496EB3CB7FC0B2ECC2B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +253,7 @@
 				TargetAttributes = {
 					42AB6CE11C0AB57800DC5BFA = {
 						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = RV68FXHFU7;
 					};
 					42AB6CFD1C0AB57800DC5BFA = {
 						CreatedOnToolsVersion = 7.0;
@@ -326,6 +328,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinguMerchant/Pods-PinguMerchant-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76FED496EB3CB7FC0B2ECC2B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PinguMerchant/Pods-PinguMerchant-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8F567FACD4CFF6128951965A /* Check Pods Manifest.lock */ = {
@@ -497,6 +514,7 @@
 			baseConfigurationReference = 71D34DCBE58C854BB836897F /* Pods-PinguMerchant.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PinguMerchant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguMerchant;
@@ -509,6 +527,7 @@
 			baseConfigurationReference = A4087AD69A5D678471AEF9C0 /* Pods-PinguMerchant.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = PinguMerchant/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = PinguPay.PinguMerchant;

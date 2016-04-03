@@ -3,7 +3,7 @@
 
 target 'PinguMerchant' do
 
-pod 'ObjectiveDDP'
+pod 'ObjectiveDDP', :path => '../ObjectiveDDP/ObjectiveDDP.podspec'
 pod 'CDZQRScanningViewController'
 
 

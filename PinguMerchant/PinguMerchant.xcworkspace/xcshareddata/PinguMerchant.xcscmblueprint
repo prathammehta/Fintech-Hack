@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "AEE9529CDE0157A31C5EC7084EFEB2FD26A5CC0A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2A36E8CA75548CF8947EB69D3AE99DA6FB031C64" : 0,
+    "AEE9529CDE0157A31C5EC7084EFEB2FD26A5CC0A" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B4D8B86B-6BB3-4C34-96CE-B2DF665C5071",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2A36E8CA75548CF8947EB69D3AE99DA6FB031C64" : "Fintech-Hack\/ObjectiveDDP\/",
+    "AEE9529CDE0157A31C5EC7084EFEB2FD26A5CC0A" : "Fintech-Hack\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PinguMerchant",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PinguMerchant\/PinguMerchant.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:boundsj\/ObjectiveDDP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2A36E8CA75548CF8947EB69D3AE99DA6FB031C64"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:prathammehta\/Fintech-Hack.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AEE9529CDE0157A31C5EC7084EFEB2FD26A5CC0A"
+    }
+  ]
+}

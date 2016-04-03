@@ -18,18 +18,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-    self.meteorClient = [[MeteorClient alloc] initWithDDPVersion:@"pre2"];
-    //[self.meteorClient addSubscription:@"awesome_server_mongo_collection"];
-    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://192.168.15.18:3000/websocket" delegate:self.meteorClient];
-    self.meteorClient.ddp = ddp;
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnection) name:MeteorClientDidConnectNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnectionReady) name:MeteorClientConnectionReadyNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportDisconnection) name:MeteorClientDidDisconnectNotification object:nil];
-    
-    
-    [self.meteorClient.ddp connectWebSocket];
-    
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
     [self.locationManager requestAlwaysAuthorization];
@@ -64,18 +52,6 @@
     }
     
     [[UIApplication sharedApplication] presentLocalNotificationNow:notification];
-}
-
-- (void)reportConnection {
-    NSLog(@"Connecting to Meteor Server");
-}
-
-- (void)reportConnectionReady {
-    NSLog(@"CONNECTED to Meteor Server!");
-}
-
-- (void)reportDisconnection {
-    NSLog(@"Disconnected to Meteor Server");
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options

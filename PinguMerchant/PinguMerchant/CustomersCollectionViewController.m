@@ -30,17 +30,18 @@ static NSString * const reuseIdentifier = @"customerCell";
 -(void)viewDidLoad{
     [super viewDidLoad];
     
-    self.meteorClient = [[MeteorClient alloc] initWithDDPVersion:@"pre2"];
+    self.meteorClient = [[MeteorClient alloc] initWithDDPVersion:@"1"];
     //[self.meteorClient addSubscription:@"awesome_server_mongo_collection"];
-    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://192.168.15.18:3000/websocket" delegate:self.meteorClient];
+    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://192.168.1.39:3000/websocket" delegate:self.meteorClient];
     self.meteorClient.ddp = ddp;
+   
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnection) name:MeteorClientDidConnectNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnectionReady) name:MeteorClientConnectionReadyNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportDisconnection) name:MeteorClientDidDisconnectNotification object:nil];
     
-    
     [self.meteorClient.ddp connectWebSocket];
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
     
     self.locationManager = [[CLLocationManager alloc] init];
     self.locationManager.delegate = self;
@@ -71,7 +72,7 @@ static NSString * const reuseIdentifier = @"customerCell";
     
     self.detectedBeacons = beacons;
     
-    [self.meteorClient callMethodName:@"currentCustomersInStore" parameters:@[kUUID, customerMinorIDs] responseCallback:^(NSDictionary *response, NSError *error) {
+    [self.meteorClient callMethodName:@"updateCustomersInStore" parameters:@[kUUID, customerMinorIDs] responseCallback:^(NSDictionary *response, NSError *error) {
         NSLog(@"sent customers to server");
         
         [manager startRangingBeaconsInRegion:region];
@@ -123,14 +124,16 @@ static NSString * const reuseIdentifier = @"customerCell";
 
 - (void)reportConnection {
     NSLog(@"Connecting to Meteor Server");
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:YES];
 }
 
 - (void)reportConnectionReady {
     NSLog(@"CONNECTED to Meteor Server!");
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
 }
 
 - (void)reportDisconnection {
-
+    NSLog(@"------------------- DISCONNECTED to Meteor Server!");
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
