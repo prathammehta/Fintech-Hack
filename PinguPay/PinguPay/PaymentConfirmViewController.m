@@ -7,6 +7,7 @@
 //
 
 #import "PaymentConfirmViewController.h"
+#import <LocalAuthentication/LocalAuthentication.h>
 
 @interface PaymentConfirmViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -117,13 +118,54 @@
 
 - (IBAction)ConfirmPressed:(UIButton *)sender
 {
+
+//    LAContext *myContext = [[LAContext alloc] init];
+//    NSError *authError = nil;
+//    NSString *myLocalizedReasonString = @"Authenticate using your finger";
+//    if ([myContext canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:&authError]) {
+//        
+//        [myContext evaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics
+//                  localizedReason:myLocalizedReasonString
+//                            reply:^(BOOL succes, NSError *error) {
+//                                
+//                                if (succes) {
+//                                    
+//                                    NSLog(@"User is authenticated successfully");
+//                                } else {
+//                                    
+//                                    switch (error.code) {
+//                                        case LAErrorAuthenticationFailed:
+//                                            NSLog(@"Authentication Failed");
+//                                            break;
+//                                            
+//                                        case LAErrorUserCancel:
+//                                            NSLog(@"User pressed Cancel button");
+//                                            break;
+//                                            
+//                                        case LAErrorUserFallback:
+//                                            NSLog(@"User pressed \"Enter Password\"");
+//                                            break;
+//                                            
+//                                        default:
+//                                            NSLog(@"Touch ID is not configured");
+//                                            break;
+//                                    }
+//                                    
+//                                    NSLog(@"Authentication Fails");
+//                                }
+//                            }];
+//    } else {
+//        NSLog(@"Can not evaluate Touch ID");
+//    
+//    }
+
     UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] init];
     indicator.frame = sender.frame;
     sender.hidden = YES;
     [self.view addSubview:indicator];
     [indicator setColor:[UIColor lightGrayColor]];
     [indicator startAnimating];
-    double delayInSeconds = 1.0;
+    double delayInSeconds = 5.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
     {

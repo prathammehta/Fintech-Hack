@@ -36,7 +36,7 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
     
     self.meteorClient = [[MeteorClient alloc] initWithDDPVersion:@"1"];
     [self.meteorClient addSubscription:@"ordersForMe" withParameters:@[@CUSTOMER_ID]];
-    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://192.168.1.39:3000/websocket" delegate:self.meteorClient];
+    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://192.168.1.110:3000/websocket" delegate:self.meteorClient];
     self.meteorClient.ddp = ddp;
     
     
@@ -47,6 +47,8 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
     [self.meteorClient.ddp connectWebSocket];
     
     [self startAdvertisingBeacon];
+    
+    self.navigationItem.titleView = [[NSBundle mainBundle] loadNibNamed:@"NavbarHeaderView" owner:self options:nil].firstObject;
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -159,7 +161,6 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
     
     NSLog(@"Turning on advertising for region: %@.", region);
     
-    [self performSegueWithIdentifier:@"bluetooth" sender:self];
 }
 
 - (void)peripheralManagerDidUpdateState:(CBPeripheralManager *)peripheralManager
@@ -186,16 +187,6 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
 
 - (void)reportDisconnection {
     NSLog(@"------------------- DISCONNECTED to Meteor Server!");
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 0;
 }
 
 @end

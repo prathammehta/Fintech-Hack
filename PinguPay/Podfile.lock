@@ -12,7 +12,7 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   ObjectiveDDP:
-    :path: "../ObjectiveDDP/ObjectiveDDP.podspec"
+    :path: ../ObjectiveDDP/ObjectiveDDP.podspec
 
 SPEC CHECKSUMS:
   CDZQRScanningViewController: bec2f94f0378876e44a64db156d92f11d2825d95

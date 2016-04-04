@@ -19,6 +19,13 @@
 		422A13641C0A24470081FD09 /* 4p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13631C0A24470081FD09 /* 4p.png */; };
 		422A13661C0A249E0081FD09 /* 5p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13651C0A249E0081FD09 /* 5p.png */; };
 		422A13681C0A24E80081FD09 /* 6p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13671C0A24E80081FD09 /* 6p.png */; };
+		425BF2DE1CB1A97500AE1D66 /* coverStar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 425BF2DD1CB1A97500AE1D66 /* coverStar.jpg */; };
+		425BF2E01CB1AD7B00AE1D66 /* NavbarHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 425BF2DF1CB1AD7B00AE1D66 /* NavbarHeaderView.xib */; };
+		425BF2E51CB1B63A00AE1D66 /* star1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 425BF2E11CB1B63A00AE1D66 /* star1.jpg */; };
+		425BF2E61CB1B63A00AE1D66 /* star4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 425BF2E21CB1B63A00AE1D66 /* star4.jpg */; };
+		425BF2E71CB1B63A00AE1D66 /* star3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 425BF2E31CB1B63A00AE1D66 /* star3.jpg */; };
+		425BF2E81CB1B63A00AE1D66 /* star2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 425BF2E41CB1B63A00AE1D66 /* star2.jpg */; };
+		425BF2EA1CB1B92200AE1D66 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 425BF2E91CB1B92200AE1D66 /* LocalAuthentication.framework */; };
 		42AB6CD21C0A995300DC5BFA /* RaiseInvoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6CD11C0A995300DC5BFA /* RaiseInvoiceViewController.m */; };
 		42AB6CD51C0A9C3800DC5BFA /* lines.png in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6CD41C0A9C3800DC5BFA /* lines.png */; };
 		42AB6CD81C0A9D6E00DC5BFA /* PaymentConfirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6CD71C0A9D6E00DC5BFA /* PaymentConfirmViewController.m */; };
@@ -74,6 +81,13 @@
 		422A13631C0A24470081FD09 /* 4p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4p.png; sourceTree = "<group>"; };
 		422A13651C0A249E0081FD09 /* 5p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5p.png; sourceTree = "<group>"; };
 		422A13671C0A24E80081FD09 /* 6p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6p.png; sourceTree = "<group>"; };
+		425BF2DD1CB1A97500AE1D66 /* coverStar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = coverStar.jpg; sourceTree = "<group>"; };
+		425BF2DF1CB1AD7B00AE1D66 /* NavbarHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavbarHeaderView.xib; sourceTree = "<group>"; };
+		425BF2E11CB1B63A00AE1D66 /* star1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = star1.jpg; sourceTree = "<group>"; };
+		425BF2E21CB1B63A00AE1D66 /* star4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = star4.jpg; sourceTree = "<group>"; };
+		425BF2E31CB1B63A00AE1D66 /* star3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = star3.jpg; sourceTree = "<group>"; };
+		425BF2E41CB1B63A00AE1D66 /* star2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = star2.jpg; sourceTree = "<group>"; };
+		425BF2E91CB1B92200AE1D66 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		42AB6CD01C0A995300DC5BFA /* RaiseInvoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RaiseInvoiceViewController.h; sourceTree = "<group>"; };
 		42AB6CD11C0A995300DC5BFA /* RaiseInvoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RaiseInvoiceViewController.m; sourceTree = "<group>"; };
 		42AB6CD41C0A9C3800DC5BFA /* lines.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lines.png; sourceTree = "<group>"; };
@@ -115,6 +129,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				425BF2EA1CB1B92200AE1D66 /* LocalAuthentication.framework in Frameworks */,
 				1670E9DD1C0AC65B00D28D1A /* CoreBluetooth.framework in Frameworks */,
 				42F4731F1C09F27700A9E22C /* FBSDKLoginKit.framework in Frameworks */,
 				42F4731E1C09F27700A9E22C /* FBSDKCoreKit.framework in Frameworks */,
@@ -186,6 +201,7 @@
 				42AB6D2C1C0AFD1800DC5BFA /* ScanACodeViewController.m */,
 				1670E9D91C0AC5E100D28D1A /* HomeTableViewController.h */,
 				1670E9DA1C0AC5E100D28D1A /* HomeTableViewController.m */,
+				425BF2DF1CB1AD7B00AE1D66 /* NavbarHeaderView.xib */,
 				42AB6CD61C0A9D6E00DC5BFA /* PaymentConfirmViewController.h */,
 				42AB6CD71C0A9D6E00DC5BFA /* PaymentConfirmViewController.m */,
 				42AB6CD01C0A995300DC5BFA /* RaiseInvoiceViewController.h */,
@@ -194,6 +210,7 @@
 				42AB6D301C0B018400DC5BFA /* 2.jpg */,
 				42AB6D311C0B018400DC5BFA /* 1.jpg */,
 				42AB6D2E1C0B012E00DC5BFA /* starbucks.png */,
+				425BF2DD1CB1A97500AE1D66 /* coverStar.jpg */,
 				42AB6CD31C0A996500DC5BFA /* Setup Flow */,
 			);
 			path = PinguPay;
@@ -202,6 +219,10 @@
 		42F472E51C09BEFE00A9E22C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				425BF2E11CB1B63A00AE1D66 /* star1.jpg */,
+				425BF2E21CB1B63A00AE1D66 /* star4.jpg */,
+				425BF2E31CB1B63A00AE1D66 /* star3.jpg */,
+				425BF2E41CB1B63A00AE1D66 /* star2.jpg */,
 				422A13591C0A15D00081FD09 /* logo.png */,
 				422A13671C0A24E80081FD09 /* 6p.png */,
 				422A13651C0A249E0081FD09 /* 5p.png */,
@@ -244,6 +265,7 @@
 		56B7F5D2BF1E80F68A20DF03 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				425BF2E91CB1B92200AE1D66 /* LocalAuthentication.framework */,
 				1670E9DC1C0AC65B00D28D1A /* CoreBluetooth.framework */,
 				F7978F8926583B8345C9C927 /* libPods-PinguPay.a */,
 			);
@@ -369,15 +391,21 @@
 				422A13581C0A0D270081FD09 /* 2p.png in Resources */,
 				42F472F81C09BEFE00A9E22C /* LaunchScreen.storyboard in Resources */,
 				42AB6D2F1C0B012E00DC5BFA /* starbucks.png in Resources */,
+				425BF2E01CB1AD7B00AE1D66 /* NavbarHeaderView.xib in Resources */,
+				425BF2E81CB1B63A00AE1D66 /* star2.jpg in Resources */,
 				422A13661C0A249E0081FD09 /* 5p.png in Resources */,
 				422A135A1C0A15D00081FD09 /* logo.png in Resources */,
+				425BF2E71CB1B63A00AE1D66 /* star3.jpg in Resources */,
+				425BF2E51CB1B63A00AE1D66 /* star1.jpg in Resources */,
 				422A13621C0A23E00081FD09 /* 3p.png in Resources */,
 				422A13681C0A24E80081FD09 /* 6p.png in Resources */,
 				422A13561C09FEC10081FD09 /* 1p.png in Resources */,
+				425BF2E61CB1B63A00AE1D66 /* star4.jpg in Resources */,
 				422A13641C0A24470081FD09 /* 4p.png in Resources */,
 				42AB6D321C0B018400DC5BFA /* 2.jpg in Resources */,
 				42F472F51C09BEFE00A9E22C /* Assets.xcassets in Resources */,
 				42AB6CD51C0A9C3800DC5BFA /* lines.png in Resources */,
+				425BF2DE1CB1A97500AE1D66 /* coverStar.jpg in Resources */,
 				42F472F01C09BEFE00A9E22C /* Main.storyboard in Resources */,
 				42AB6D331C0B018400DC5BFA /* 1.jpg in Resources */,
 			);
