@@ -7,6 +7,7 @@
 //
 
 #import "HomeTableViewController.h"
+#import "PaymentConfirmViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import <CoreBluetooth/CoreBluetooth.h>
 
@@ -79,10 +80,12 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
         NSDictionary *order = currentOrders[count - 1];
         NSNumber *customer = [order objectForKey:@"customer"];
         NSNumber *approved = [order objectForKey:@"approved"];
+        NSNumber *amount = [order objectForKey:@"amount"];
         
         if(customer.intValue == CUSTOMER_ID && approved.boolValue == NO){
-            //present a new view controller for this amount, and store id....
-            NSLog(@"entered here");
+            PaymentConfirmViewController *vc = [[UIStoryboard storyboardWithName:@"main" bundle:nil] instantiateViewControllerWithIdentifier:@"payVC"];
+            vc.amount = [NSString stringWithFormat:@"%@",amount];
+            [self presentViewController:vc animated:YES completion:nil];
         }
     }
     
