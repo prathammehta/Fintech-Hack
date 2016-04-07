@@ -7,6 +7,7 @@
 //
 
 #import "CustomersCollectionViewController.h"
+#import "AppDelegate.h"
 
 static NSString * const kUUID = @"A495FFFF-C5B1-4B44-B512-1370F02D74DE";
 static NSString * const kIdentifier = @"Vehicle";
@@ -32,8 +33,11 @@ static NSString * const reuseIdentifier = @"customerCell";
     
     self.meteorClient = [[MeteorClient alloc] initWithDDPVersion:@"1"];
     //[self.meteorClient addSubscription:@"awesome_server_mongo_collection"];
-    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://192.168.1.39:3000/websocket" delegate:self.meteorClient];
+    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://192.168.1.103:3000/websocket" delegate:self.meteorClient];
     self.meteorClient.ddp = ddp;
+    
+    AppDelegate *appde = [[UIApplication sharedApplication] delegate];
+    appde.meteorClient = self.meteorClient;
    
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reportConnection) name:MeteorClientDidConnectNotification object:nil];
@@ -47,6 +51,18 @@ static NSString * const reuseIdentifier = @"customerCell";
     self.locationManager.delegate = self;
     [self.locationManager requestAlwaysAuthorization];
     [self startRangingForBeacons];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(raiseAnInvoiceToServer:) name:@"raiseInvoice" object:nil];
+}
+
+- (void)raiseAnInvoiceToServer:(NSNotification *)note {
+    NSDictionary *userInfo = note.userInfo;
+    NSString *amount = [userInfo objectForKey:@"amount"];
+    
+    [self.meteorClient callMethodName:@"raiseInvoice" parameters:@[@2, amount] responseCallback:^(NSDictionary *response, NSError *error) {
+        NSLog(@"invoice sent to server");
+        NSLog(@"esponse form server for inovice: %@", response);
+    }];
 }
 
 - (void)startRangingForBeacons

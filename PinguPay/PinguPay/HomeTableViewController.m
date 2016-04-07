@@ -37,7 +37,7 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
     
     self.meteorClient = [[MeteorClient alloc] initWithDDPVersion:@"1"];
     [self.meteorClient addSubscription:@"ordersForMe" withParameters:@[@CUSTOMER_ID]];
-    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://192.168.1.110:3000/websocket" delegate:self.meteorClient];
+    ObjectiveDDP *ddp = [[ObjectiveDDP alloc] initWithURLString:@"ws://192.168.1.103:3000/websocket" delegate:self.meteorClient];
     self.meteorClient.ddp = ddp;
     
     
@@ -83,7 +83,7 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
         NSNumber *amount = [order objectForKey:@"amount"];
         
         if(customer.intValue == CUSTOMER_ID && approved.boolValue == NO){
-            PaymentConfirmViewController *vc = [[UIStoryboard storyboardWithName:@"main" bundle:nil] instantiateViewControllerWithIdentifier:@"payVC"];
+            PaymentConfirmViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"payVC"];
             vc.amount = [NSString stringWithFormat:@"%@",amount];
             [self presentViewController:vc animated:YES completion:nil];
         }
@@ -110,7 +110,6 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
     
     [self turnOnAdvertising];
 }
-
 - (void)createBeaconRegion
 {
     if (self.beaconRegion)

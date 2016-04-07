@@ -8,6 +8,7 @@
 
 #import "RaiseInvoiceTableViewController.h"
 #import "ProcessingTransactionViewController.h"
+#import "AppDelegate.h"
 
 @interface RaiseInvoiceTableViewController ()
 
@@ -21,6 +22,10 @@
 {
     ProcessingTransactionViewController *vc = segue.destinationViewController;
     vc.qrString = [NSString stringWithFormat:@"=10D39AE7-020E-4467-9CB2-DD36366F899D&amount=%@",self.amountField.text];
+}
+- (IBAction)confirmPresses:(id)sender {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"raiseInvoice" object:nil userInfo:@{@"amount" : self.amountField.text}];
+    [self performSegueWithIdentifier:@"yipee" sender:self];
 }
 
 @end
