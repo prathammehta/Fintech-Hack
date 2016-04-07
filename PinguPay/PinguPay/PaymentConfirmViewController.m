@@ -43,6 +43,8 @@
                              @"Balance: USD 320.72",
                              @"Bank A/C No: xxxx-3543"
                              ];
+    
+    self.amountLabel.text = self.amount;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
