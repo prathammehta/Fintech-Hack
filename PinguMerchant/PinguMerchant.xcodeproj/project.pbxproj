@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		165C74751CB6869700DDA915 /* s4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 165C74711CB6869700DDA915 /* s4.jpg */; };
+		165C74761CB6869700DDA915 /* s3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 165C74721CB6869700DDA915 /* s3.jpg */; };
+		165C74771CB6869700DDA915 /* s2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 165C74731CB6869700DDA915 /* s2.jpg */; };
+		165C74781CB6869700DDA915 /* s1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 165C74741CB6869700DDA915 /* s1.jpg */; };
 		42AB6CE71C0AB57800DC5BFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6CE61C0AB57800DC5BFA /* main.m */; };
 		42AB6CEA1C0AB57800DC5BFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42AB6CE91C0AB57800DC5BFA /* AppDelegate.m */; };
 		42AB6CF01C0AB57800DC5BFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42AB6CEE1C0AB57800DC5BFA /* Main.storyboard */; };
@@ -42,6 +46,10 @@
 
 /* Begin PBXFileReference section */
 		15B945ED9923C1F42B77DEE7 /* libPods-PinguMerchant.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PinguMerchant.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		165C74711CB6869700DDA915 /* s4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s4.jpg; sourceTree = "<group>"; };
+		165C74721CB6869700DDA915 /* s3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s3.jpg; sourceTree = "<group>"; };
+		165C74731CB6869700DDA915 /* s2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s2.jpg; sourceTree = "<group>"; };
+		165C74741CB6869700DDA915 /* s1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = s1.jpg; sourceTree = "<group>"; };
 		42AB6CE21C0AB57800DC5BFA /* PinguMerchant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PinguMerchant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		42AB6CE61C0AB57800DC5BFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		42AB6CE81C0AB57800DC5BFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +145,10 @@
 		42AB6CE51C0AB57800DC5BFA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				165C74711CB6869700DDA915 /* s4.jpg */,
+				165C74721CB6869700DDA915 /* s3.jpg */,
+				165C74731CB6869700DDA915 /* s2.jpg */,
+				165C74741CB6869700DDA915 /* s1.jpg */,
 				42AB6CE81C0AB57800DC5BFA /* AppDelegate.h */,
 				42AB6CE91C0AB57800DC5BFA /* AppDelegate.m */,
 				42AB6CF41C0AB57800DC5BFA /* Assets.xcassets */,
@@ -290,9 +302,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				165C74751CB6869700DDA915 /* s4.jpg in Resources */,
 				42AB6CF81C0AB57800DC5BFA /* LaunchScreen.storyboard in Resources */,
+				165C74771CB6869700DDA915 /* s2.jpg in Resources */,
 				42AB6D2A1C0AF78D00DC5BFA /* sid.jpg in Resources */,
+				165C74761CB6869700DDA915 /* s3.jpg in Resources */,
 				42AB6CF51C0AB57800DC5BFA /* Assets.xcassets in Resources */,
+				165C74781CB6869700DDA915 /* s1.jpg in Resources */,
 				42AB6CF01C0AB57800DC5BFA /* Main.storyboard in Resources */,
 				42AB6D1F1C0AC18000DC5BFA /* pra.jpg in Resources */,
 			);
