@@ -158,6 +158,8 @@
 //        NSLog(@"Can not evaluate Touch ID");
 //    
 //    }
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"paymentComplete" object:nil userInfo:@{@"amount": self.amountLabel.text}];
 
     UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] init];
     indicator.frame = sender.frame;

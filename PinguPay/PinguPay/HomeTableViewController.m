@@ -66,6 +66,14 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
                                              selector:@selector(didReceiveChangeUpdate:)
                                                  name:@"changed"
                                                object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(paymentComplete:) name:@"paymentComplete" object:nil];
+}
+
+- (void) paymentComplete:(NSNotification *)note {
+    NSDictionary *dict = note.userInfo;
+    [self.meteorClient callMethodName:@"paymentComplete" parameters:@[@CUSTOMER_ID, [dict objectForKey:@"amount"] ] responseCallback:^(NSDictionary *response, NSError *error) {
+        NSLog(@"marked opayemtns and approbbed");
+    }];
 }
 
 - (void) didReceiveAddedUpdate:(NSNotification *)update {
