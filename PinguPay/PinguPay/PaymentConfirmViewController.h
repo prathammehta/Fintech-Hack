@@ -13,4 +13,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *amountLabel;
 @property (nonatomic, strong) NSString *amount;
 @property (nonatomic) BOOL bypassConfirm;
+@property (strong, nonatomic) IBOutlet UILabel *merchantName;
 @end

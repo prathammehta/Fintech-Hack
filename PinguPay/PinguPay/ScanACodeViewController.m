@@ -56,6 +56,7 @@
                 PaymentConfirmViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"payVC"];
                 [self presentViewController:vc animated:YES completion:^{
                     vc.amountLabel.text = [params objectForKey:@"amount"];
+                    vc.merchantName.text = @"Amazon UK";
                 }];
             }];
         };

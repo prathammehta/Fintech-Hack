@@ -320,6 +320,7 @@
                     <connections>
                         <outlet property="amountLabel" destination="BPm-xd-6qJ" id="b8M-VE-hyR"/>
                         <outlet property="listOfMethodsTableView" destination="NGL-c6-bLm" id="mbh-AE-dUS"/>
+                        <outlet property="merchantName" destination="Ems-sd-VEw" id="Ipl-Qb-xmh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6go-7M-ryY" userLabel="First Responder" sceneMemberID="firstResponder"/>
