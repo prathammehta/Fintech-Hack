@@ -160,8 +160,12 @@
 //        NSLog(@"Can not evaluate Touch ID");
 //    
 //    }
+    if(!self.bypassConfirm)
+    {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"paymentComplete" object:nil userInfo:@{@"amount": self.amountLabel.text}];
+        self.bypassConfirm = NO;
+    }
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"paymentComplete" object:nil userInfo:@{@"amount": self.amountLabel.text}];
 
     UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] init];
     indicator.frame = sender.frame;
@@ -169,7 +173,7 @@
     [self.view addSubview:indicator];
     [indicator setColor:[UIColor lightGrayColor]];
     [indicator startAnimating];
-    double delayInSeconds = 5.0;
+    double delayInSeconds = 2.0;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
     dispatch_after(popTime, dispatch_get_main_queue(), ^(void)
     {

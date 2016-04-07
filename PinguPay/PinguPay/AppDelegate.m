@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PaymentConfirmViewController.h"
 
 @interface AppDelegate ()
 
@@ -29,7 +30,6 @@
     BOOL r = [[FBSDKApplicationDelegate sharedInstance] application:application didFinishLaunchingWithOptions:launchOptions];
     
     if (![launchOptions objectForKey:UIApplicationLaunchOptionsURLKey]) {
-//        abort();
     }
         return r;
 
@@ -67,7 +67,9 @@
     }
     
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"payVC"];
+    PaymentConfirmViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"payVC"];
+    vc.amount = @"335";
+    vc.bypassConfirm = YES;
     [[self.window rootViewController] presentViewController:vc animated:YES completion:nil];
     
     NSLog(@"Dict: %@",params);
