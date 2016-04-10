@@ -50,6 +50,9 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
     [self startAdvertisingBeacon];
     
     self.navigationItem.titleView = [[NSBundle mainBundle] loadNibNamed:@"NavbarHeaderView" owner:self options:nil].firstObject;
+    
+
+
 }
 
 -(void)viewDidAppear:(BOOL)animated {
@@ -67,6 +70,8 @@ static void * const kMonitoringOperationContext = (void *)&kMonitoringOperationC
                                                  name:@"changed"
                                                object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(paymentComplete:) name:@"paymentComplete" object:nil];
+    
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 }
 
 - (void) paymentComplete:(NSNotification *)note {

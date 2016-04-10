@@ -10,6 +10,10 @@
 		1670E9DB1C0AC5E100D28D1A /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1670E9DA1C0AC5E100D28D1A /* HomeTableViewController.m */; };
 		1670E9DD1C0AC65B00D28D1A /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1670E9DC1C0AC65B00D28D1A /* CoreBluetooth.framework */; };
 		1DFD0AC861FD74217313B26D /* libPods-PinguPay.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7978F8926583B8345C9C927 /* libPods-PinguPay.a */; };
+		4222B8F11CBA4C7D00495027 /* zara.png in Resources */ = {isa = PBXBuildFile; fileRef = 4222B8F01CBA4C7D00495027 /* zara.png */; };
+		4222B8F31CBA4E6A00495027 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 4222B8F21CBA4E6A00495027 /* banner.png */; };
+		4222B8F71CBA500100495027 /* z1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4222B8F61CBA500100495027 /* z1.jpg */; };
+		4222B8F91CBA508A00495027 /* z2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4222B8F81CBA508A00495027 /* z2.jpg */; };
 		422A13541C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422A13531C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m */; };
 		422A13561C09FEC10081FD09 /* 1p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13551C09FEC10081FD09 /* 1p.png */; };
 		422A13581C0A0D270081FD09 /* 2p.png in Resources */ = {isa = PBXBuildFile; fileRef = 422A13571C0A0D270081FD09 /* 2p.png */; };
@@ -70,6 +74,10 @@
 		1670E9D91C0AC5E100D28D1A /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
 		1670E9DA1C0AC5E100D28D1A /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
 		1670E9DC1C0AC65B00D28D1A /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		4222B8F01CBA4C7D00495027 /* zara.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zara.png; sourceTree = "<group>"; };
+		4222B8F21CBA4E6A00495027 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banner.png; sourceTree = "<group>"; };
+		4222B8F61CBA500100495027 /* z1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = z1.jpg; sourceTree = "<group>"; };
+		4222B8F81CBA508A00495027 /* z2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = z2.jpg; sourceTree = "<group>"; };
 		422A13521C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddPaymentMethodCollectionViewController.h; sourceTree = "<group>"; };
 		422A13531C09FD5C0081FD09 /* AddPaymentMethodCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddPaymentMethodCollectionViewController.m; sourceTree = "<group>"; };
 		422A13551C09FEC10081FD09 /* 1p.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1p.png; sourceTree = "<group>"; };
@@ -206,11 +214,15 @@
 				42AB6CD71C0A9D6E00DC5BFA /* PaymentConfirmViewController.m */,
 				42AB6CD01C0A995300DC5BFA /* RaiseInvoiceViewController.h */,
 				42AB6CD11C0A995300DC5BFA /* RaiseInvoiceViewController.m */,
+				4222B8F01CBA4C7D00495027 /* zara.png */,
 				42AB6CD41C0A9C3800DC5BFA /* lines.png */,
 				42AB6D301C0B018400DC5BFA /* 2.jpg */,
 				42AB6D311C0B018400DC5BFA /* 1.jpg */,
+				4222B8F61CBA500100495027 /* z1.jpg */,
 				42AB6D2E1C0B012E00DC5BFA /* starbucks.png */,
 				425BF2DD1CB1A97500AE1D66 /* coverStar.jpg */,
+				4222B8F81CBA508A00495027 /* z2.jpg */,
+				4222B8F21CBA4E6A00495027 /* banner.png */,
 				42AB6CD31C0A996500DC5BFA /* Setup Flow */,
 			);
 			path = PinguPay;
@@ -351,7 +363,7 @@
 				TargetAttributes = {
 					42F472E11C09BEFE00A9E22C = {
 						CreatedOnToolsVersion = 7.0;
-						DevelopmentTeam = 9M5WYA4P47;
+						DevelopmentTeam = RV68FXHFU7;
 					};
 					42F472FD1C09BEFE00A9E22C = {
 						CreatedOnToolsVersion = 7.0;
@@ -395,13 +407,17 @@
 				425BF2E81CB1B63A00AE1D66 /* star2.jpg in Resources */,
 				422A13661C0A249E0081FD09 /* 5p.png in Resources */,
 				422A135A1C0A15D00081FD09 /* logo.png in Resources */,
+				4222B8F31CBA4E6A00495027 /* banner.png in Resources */,
 				425BF2E71CB1B63A00AE1D66 /* star3.jpg in Resources */,
+				4222B8F91CBA508A00495027 /* z2.jpg in Resources */,
 				425BF2E51CB1B63A00AE1D66 /* star1.jpg in Resources */,
 				422A13621C0A23E00081FD09 /* 3p.png in Resources */,
 				422A13681C0A24E80081FD09 /* 6p.png in Resources */,
 				422A13561C09FEC10081FD09 /* 1p.png in Resources */,
 				425BF2E61CB1B63A00AE1D66 /* star4.jpg in Resources */,
 				422A13641C0A24470081FD09 /* 4p.png in Resources */,
+				4222B8F71CBA500100495027 /* z1.jpg in Resources */,
+				4222B8F11CBA4C7D00495027 /* zara.png in Resources */,
 				42AB6D321C0B018400DC5BFA /* 2.jpg in Resources */,
 				42F472F51C09BEFE00A9E22C /* Assets.xcassets in Resources */,
 				42AB6CD51C0A9C3800DC5BFA /* lines.png in Resources */,

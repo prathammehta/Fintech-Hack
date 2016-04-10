@@ -165,6 +165,11 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"paymentComplete" object:nil userInfo:@{@"amount": self.amountLabel.text}];
         self.bypassConfirm = NO;
     }
+    else
+    {
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"testiscool://cool?siddharth=gupta&pratham=mehta"]];
+        NSLog(@"We should redirect");
+    }
     
 
     UIActivityIndicatorView *indicator = [[UIActivityIndicatorView alloc] init];

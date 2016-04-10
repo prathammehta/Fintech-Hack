@@ -109,6 +109,13 @@
     return _managedObjectContext;
 }
 
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options
+{
+    UIViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"success"];
+    [[self.window rootViewController] presentViewController:vc animated:YES completion:nil];
+    return YES;
+}
+
 #pragma mark - Core Data Saving support
 
 - (void)saveContext {
